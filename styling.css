@@ -1,0 +1,582 @@
+/* use with Main and home html */
+/*global start with '*' */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    /*color-scheme: light dark;*/
+    color-scheme: normal;
+    /*font-size: calc(13px + 0.2dvw);*/
+    font-size: clamp(1rem, 1dvw, 1.25rem);
+    /*scroll-behavior: smooth;*/
+}
+
+body {
+    /*font-family: system-ui;*/
+    font-family: 'Libre Franklin', sans-serif;
+    /*font-size: calc(12px + 0.390625dvw);*/
+    line-height: 1.5;
+    
+}
+
+ /* font styling */
+h1 {
+    text-align: center;
+    font-size: calc(1.8rem + 0.390625dvw);
+}
+h3 {
+    /*rgb(27, 27, 227),*/
+    background: linear-gradient(to right,green,rgb(2, 203, 103));
+    font-size: calc(2rem + 0.390625dvw);
+    font-family: Arial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#p6 {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+/*at https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/*/
+/*in and out text shadow grey back*/
+#p7 {
+    margin: 0;
+    padding: 0;
+    background-color: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+
+}
+/*in and out text shadow white back*/
+#p8 {
+    margin: 0;
+    padding: 0;
+    background-color: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+
+/*general link styles for all pages*/
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+}
+    li {
+        text-align: center;
+        flex: 3;
+    }
+/*class for font awesome icons*/
+.user {
+    flex:1;
+    
+}
+a {
+    display:inline-block;
+    width:fit-content;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: calc(0.9em + 0.290625dvw);
+}
+/*font awesome icons*/
+i {
+    width: 30px;
+    color: orange;
+    transform: scale(2);
+    z-index: -1;
+    margin: 3px;
+}
+
+/* highlight active links on hover */
+li a:hover:not(.active) {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.05);
+    color:white;
+}
+li i:hover:not(.active) {   
+    color:white;
+    transform: scale(2.05);
+    transition: all 0.5s ease-in-out;
+}
+
+/* global return */
+#scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    float: right;
+    right: 10%;
+    left: 90%;        
+} 
+
+/* css animation element fade in courtesy of 
+https://alvarotrigo.com/blog/css-animations-scroll/*/
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+  .active.fade-in {
+    animation: fade-in 1s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    }
+  @keyframes fade-in {
+    0% {
+        
+        opacity: 0;
+    }
+    100% {
+        
+        opacity: 1;
+    }
+    }
+/* general elements for re-use over any page */
+img {
+    max-width: 100%;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* general element wrapper */ 
+.wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+}
+    
+.textBox {
+    text-align: center;
+    padding: 10px 20px;
+}
+.textBoxLeft {
+    text-align: left;
+    padding: 10px 20px;
+    margin: 30px 30px;
+}
+.textBoxDivider {
+    width:  100%;;
+    text-align: center;
+    padding: 0 0 5px 0;
+    margin-bottom: 20px;
+    color:rgb(238, 10, 10);
+    background-color: #ff0606;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+.italText{
+    font-style: italic;
+}
+
+.title {
+    width: 100%;
+    height: fit-content;
+    font-size: calc(1.5rem + 0.390625dvw);
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+ 
+/* ####### */
+/* repeated base elements for each page */
+.pageTitle {
+    width: 100%;
+    height: fit-content;
+    font-size: calc(3.5rem + 0.390625dvw);
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+}
+    .pageTitle p {
+        margin: 0;
+        padding: 0;
+        background-color: #666666;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    }
+.nav {
+    background-color: rgb(99, 146, 248);
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    transition: all 1s;
+}
+
+    .nav p {
+        color: white;
+    }
+    .sticky {
+        background-color: rgb(79, 126, 248);
+
+    }
+    .stickyMore {
+        background-color: rgb(59, 106, 248);
+        /* rgb(13, 68, 186),rgb(7, 46, 131) */
+    }
+
+
+.footer {
+    background-color: rgb(99, 146, 248);
+    width: 100%;
+    margin-top: 20px;
+    min-height: 15dvh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* ####################################### */
+/* home page only */
+.header {
+    width: 100%;
+    max-height:180px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    background-color: rgb(46,117,182); 
+}
+    .header img {
+        content: "";
+        max-width: 100%;
+        height: auto;
+        z-index: -1;
+        transition: all 3s ease-in-out;
+        opacity: 0.0;
+        box-shadow: none;
+    }
+    .header img:hover {
+        transform: scale(1.0) rotate(-2deg);
+        opacity: 1.0;
+    }
+
+/* used in home header for name */    
+#header-textBox {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+    #header-textBox p {
+        font-weight: bolder;
+        font-size: calc(2.5rem + 0.390625dvw);
+        color: black;
+    }
+
+
+/* diff color */
+#home-footer {
+    background-color: rgb(38, 17, 17); 
+    width: 100%;
+    min-height: 15dvh;
+    margin: 10px 0 30px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+    #home-footer p {
+        color: white;
+    }
+    #home-footer a {
+        color: white;
+    }
+
+.work-in-progress {
+    background-image: url("pics/stickynote.jpg");
+    background-size: calc(200px + 3dvw);
+    background-position:left;
+    background-repeat: no-repeat;
+    background-color: white;
+    min-height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(135, 163, 131, 0.959), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    border-radius: 3px;
+    padding: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+    /*transparent text in image container*/
+    #wip-text {
+        background-color: white;
+        font-size: calc(1.5rem + 0.390625dvw);
+        font-weight: bold;
+        margin: auto 30px auto 25px;
+        padding: 15px;
+        text-align: center;
+        mix-blend-mode: screen;
+    }
+
+
+/* image cards */
+/*image cards that enlarge on hover */
+.imageCase {
+    max-width: 360px;
+    height: auto;
+    /*background-color: white;*/
+    padding: 0;
+    margin: auto;
+   
+}
+.imageFrame {
+    width: 350px;
+    height: fit-content;
+    border: 2px solid rgb(233, 225, 225);
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.4s ease-in-out;
+}
+    .imageFrame:hover {
+        filter: brightness(110%);
+        transform: scale(1.05);
+    }
+
+
+/* personal projects */
+.imageCase.pp {
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text-container {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 3px;
+    background-color:rgb(236, 242, 249);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* col1 used in page 2 */
+.col1 {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    padding: 0 5dvw ;
+    
+}
+    .col1.litrev {
+        /*background: linear-gradient(transparent,white,rgb(157, 204, 251),white,transparent);*/
+        background-color: white;
+    }
+    .col1.nwconf {
+        /*background-image: linear-gradient( to bottom, transparent, white,rgb(13, 68, 186),rgb(7, 46, 131),white, transparent);*/
+        background-color: white;
+    }
+    .colSpacer {
+        width: 100%;
+        min-height: 10dvh;
+        margin: 1rem auto 3rem auto;
+    }
+    .colSpacer.line {
+        border-style: solid;
+        border-color: gold;
+    }
+
+/*page3 specific styles*/
+.subtitle {
+    font-size: calc(1.125rem + 0.390625dvw);
+}
+
+/* racing game image display */
+.img-RacingGame { 
+    background-color:white;
+    width: fit-content;
+    margin: 10px auto 10px auto;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row; 
+    padding: 5px; 
+    justify-content: space-between;
+    align-items:first baseline;
+}
+    .img-RacingGame img {
+        padding: 5px;
+        background-color: rgb(54, 169, 39);
+    }
+/* word guess scrollable horizontal gallery */
+.img-wordGuess {
+    display: flex;
+    max-width: 450px;
+    height: max-content;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    background-color: white;
+    margin: 0 auto 10px auto;;
+    margin-right: auto;
+    border-style: ridge;
+    border-color: aliceblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    .img-wordGuess img {
+        min-width: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scroll-snap-align: center;
+        box-shadow: none;
+        margin-bottom: 13px;
+    }
+/* Responsive grid gallery container django */
+.imgGridWrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 8%;
+    background-color: white;
+}
+    /* gallery */
+    .gallery {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        
+    }
+    .gallery a:hover {
+        filter: brightness(90%) drop-shadow(5px 5px 5px gray);
+        
+    }
+
+/* ############################## */
+/*page 3 document display */
+.docContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+    /* CV */
+    .docFrame {
+        background-color:rgb(233, 233, 247);
+        width: 96%;
+        margin: 20px 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border: yellow;
+        border-style: ridge;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        transition: all 1.5s ease-in-out;  
+    }
+        .docFrame a {
+            color: rgb(22, 11, 235);
+        }
+        .docFrame a:hover {
+            color: rgb(198, 147, 52);     
+        }
+        
+    #PDFView1 {
+        width: 100%;
+        height: 600px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        transition: all 1.5s ease-in-out;
+    }
+    #PDFView2 {
+        width: 100%;
+        height: 600px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        transition: all 1.5s ease-in-out;
+    } 
+    .docEnlarge {
+        transform: scale(1.3);
+        transform-origin: top;
+        z-index: 99999;    
+    }
+    
+.main { 
+   margin: 0;
+   padding: 0;
+   flex-direction: row;
+}
+/*media links */
+
+@media (width >= 1000px) { 
+    .wrapper {padding: 0 12% 2rem 12%; }
+    .docContainer { flex-direction: row; justify-content:space-evenly;}
+    }
+@media (width < 1000px) { 
+    .img-RacingGame { flex-direction: column; align-items: center;}
+    }
+
+@media (prefers-reduced-motion) {
+    html {
+      scroll-behavior: none;
+    }
+  }
+
+  

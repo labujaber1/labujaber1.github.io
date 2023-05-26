@@ -1,0 +1,69 @@
+<1> Personal objectives
+<p> my name is Lawrence and I am a newly graduated computer science student aspiring to be a software developer. 
+            Working on course projects I have caught the coding and developer bug, there I said it and its now a life 
+            long affliction. 
+            As a result of this condition a couple of projects were created from a personal need during the course which has naturally 
+            expanded in their development to include other students.  </p>
+<p> Please feel free to take a gander I will be honoured. </p> 
+
+
+
+<1> Lit review main menu
+The purpose of this tool is to provide a single place for a student to record resources collected for an academic piece of writing. Resources are used and referenced within an assignment and can be collected from either an e-source, such as webpages or e-books, or a physical source, such as books or journals. Storing them in a static document or excel file can be used but is often difficult to sort alphabetically or by subject type to use when comparing them. 
+
+
+<2> Database connection
+Storing these resources in a database provides the user with enough space and organisation potential to use this for all assignments in each module of any level academic course. To keep it simple for the user a connection string to a SQL server can be constructed and use the windows username and password to authorise a connection. The string is editable once created to add a username and password if required. A copy of the script to create a simple three table database is included to help with the database creation. 
+
+<3> Module dashboard
+Before a resource can be recorded a module must be first created and then an assignment can be created for that module. 
+
+<4> Assignment dashboard
+The forms have been made with 'keeping it simple' at the forefront of the design with few directional hints included and no external user guide required. 
+
+<5> Resource list
+Clicking an assignment will display the resources in the bottom table. These can then be edited or a new one added. The search function can be used to find a resource by its ID number or group resources by category which are then displayed in the bottom table. The category is used to group resources and is entered by the user for each new resource created so they are in control of that. 
+
+<6> Edit resource
+Each field has a placeholder to save space so the overall tool size is as small as possible. This enables it to be open and used alongside another application such as a browser or word document. Space is given to add notes about the resource and include relevant information that can be referred to without going back to the original source. A button is included for the user to keep track of the total characters used but an error message will appear when saving if this is exceeded or fields are missing data. An example is also shown which is used as a description of the assignment rather than a resource. It is possible to write a large portion of an assignment to then be copied to a document and finalised for submission.
+
+<7> Other
+The tool is written in C# using .NET windows form framework. The database used is SQL express with data transferred using a mixture of stored procedures and directly written sql commands. The overall design follows the MVP design principles and includes a singleton design for an instance of each form. The tool is conceived from a real need of the author and has been live tested, debugged, and used by the author during the last half of a computer science degree.  
+The tool can be accessed from github.com/labujaber1/LitRevResourceMVP.
+
+Network configuration scriptor
+<1> Main menu
+This tool has been developed from a need to reduce the repetitive typing of learned network commands when a learner is configuring routers and switches in a network topology. It can be used on directly connected devices, virtual devices in GNS3, and in a limited capacity for Packet Tracer. Similar to the first project a menu is used as a container for a user to open an instance of each required form using a singleton design pattern.  
+
+<2> Create script
+A script containing a set of network configuration commands can be created from template text files stored in a designated folder. The template files are accessed and the contents displayed in the left of the display for the user to select and begin constructing a script file to the right. Each template file can include notes for the user's reference by using a ? to precede them. The command script is created in an editable display for the user to add additional data required after a set command such as an IP address or password. Show commands can also be included as reference and displayed in a separate readonly text box. The user has full control and access rights to the template files for amendment. 
+Once a script is created in the editor it can then be saved to a text file or copied and pasted directly to the command line of a network device. A folder is included to store these files but again the user has full access rights to store them elsewhere. Right clicking in the editor will display a menu with additional options such as opening a help file, append the script to an existing file, copy/paste, and file saving. 
+The terminal software putty is included for the user to copy the commands to a directly connected device. 
+
+<3> Telnet
+A script can also be delivered to a device using a telnet connection. Whilst this does require the setup of a device with username, password, ip address, and telnet access enabled, it acts as another method of delivery. This is intended to extend a learners ability and exposure to configuration procedures outside of a virtual environment. The readonly display on the right shows the retrieval of the devices command line for the user to assess if each command sent was correct. If a command was incorrectly entered by a spelling mistake for example the connection will continue and not produce an error report as is the design of a telnet delivery. 
+
+<4> TFTP
+The tool has been extended further to include a method of running configuration file backup and restore. Using a telnet connection and a server TFTPD64 included copy running-config commands are sent to a device. Retrieved configuration files can be selected and displayed for viewing or editing for advanced learners. The running-config files are chosen rather than a startup-config file to minimise the effect of configuration errors.
+
+<5> Other
+The tool has been written in C# and used the .NET windows forms framework. Each form is fully decoupled allowing for each method to be extracted and used separately elsewhere by any learner. The telnet connection is in a separate class and called in the telnet and Tftp forms. The front end design was chosen as effective means of displaying separate forms in a single display thus reducing screen space. 
+The tool can be accessed from github.com/labujaber1/NWConfigScriptor.
+
+Racing game
+<1>
+The game as the title and image infers is a two player online and offline 2D Java racing game based on the client-server model and multithreading. A server is hosted and players connect sending messages using the TCP protocol. The first connected player is established as player 1 by the server but requires both players to connect for the race to start. Messages are sent to establish the game start parameters and updated car positions displayed in a readonly communications display to the right of the application. The game ends when either player completes 3 laps and is congratulated with an image display in the center console and a hearty cheer.
+The game includes collision detection where the speed is reversed to enact a bouncing effect. Sound effects are also included as are separate key control for each car and a choice of two tracks. 
+
+Word guessing game - cheat
+<1>
+This a Python console word guessing game based on hangman but without the graphics. The computer is the controller and the player tries to guess a word from a loaded dictionary and randomly selected word length. The word length is in the range 5 - 12 and the player gets double the chosen length in guesses. There is a hard or easy mode for the player to choose and an option to end the game after each play otherwise there is no limit on game play. 
+The computer does cheat a little, instead of selecting a single word at the start the computer filters the dictionary list according to length of word and each letter guessed. 
+The computer calculates the total words for each filter criteria and selects the collection according to parameters of the easy or hard modes. The aim for the computer is to have more than one word remaining in the bank when the player reaches the end of their guesses to guarantee winning the game. 
+The easy approach is to select the largest bank of words from each filtering sequence whilst the hard level uses a scoring method to select a bank with the least common letters found in the provided dictionary.
+An additional calculation is made and applied to the random word length selection to slightly reduce the probability of larger word lengths selected. The larger the word the more guesses given so this just adds a further sprinkling of favour in the computers direction.
+Unnecessary? You decide..
+
+Django Golf equipment e-commerce site 
+<1>
+Constructed in Django using Python, HTML, CSS, Bootstrap and sqlite3 database to build this mockup golf equipment e-commerce website. It includes a selection of equipment with prices and images which is displayed by category but also using multiple sort filtering options. Forms are included to add new customers, queries and orders. The site has an admin area for an administrator to make changes or view statistics on orders and stock levels.
