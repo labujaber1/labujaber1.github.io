@@ -5,14 +5,28 @@
 // action when nav scrolls towards top of screen using event listener
 const navColour = document.querySelector(".nav");
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 950 && window.scrollY < 2500 ) {
-        navColour.classList.add("sticky");
+    if (window.scrollY > 2100 && window.scrollY < 6000 ) {
+      navColour.classList.add("stickyColourChange1");
     }
-    else if (window.scrollY >= 2500 ) {
-        navColour.classList.add("stickyMore");
-    } else {
-        navColour.classList.remove("sticky");
-        navColour.classList.remove("stickyMore");
+    else if (window.scrollY >= 6000 && window.scrollY < 10000) {
+      navColour.classList.add("stickyColourChange2");
+    }
+    else if (window.scrollY >= 10000 && window.scrollY < 13900) {
+      navColour.classList.add("stickyColourChange3");
+    } 
+    else if (window.scrollY >= 13900 && window.scrollY < 18000) {
+      navColour.classList.add("stickyColourChange4");
+    }
+    else if (window.scrollY >= 18000 ) {
+      navColour.classList.add("stickyColourChange5");
+    }
+    else {
+      navColour.classList.remove("sticky");
+      navColour.classList.remove("stickyColourChange1");
+      navColour.classList.remove("stickyColourChange2");
+      navColour.classList.remove("stickyColourChange3");
+      navColour.classList.remove("stickyColourChange4");
+      navColour.classList.remove("stickyColourChange5");
     }
 })
 

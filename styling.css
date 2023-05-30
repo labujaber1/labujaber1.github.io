@@ -10,9 +10,7 @@
 html {
     /*color-scheme: light dark;*/
     color-scheme: normal;
-    /*font-size: calc(13px + 0.2dvw);*/
     font-size: clamp(1rem, 1dvw, 1.25rem);
-    /*scroll-behavior: smooth;*/
 }
 
 body {
@@ -26,12 +24,12 @@ body {
  /* font styling */
 h1 {
     text-align: center;
-    font-size: calc(1.8rem + 0.390625dvw);
+    font-size: calc(1.8rem + 0.290625dvw);
 }
 h3 {
     /*rgb(27, 27, 227),*/
     background: linear-gradient(to right,green,rgb(2, 203, 103));
-    font-size: calc(2rem + 0.390625dvw);
+    font-size: calc(2rem + 0.290625dvw);
     font-family: Arial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -228,7 +226,7 @@ img {
 .title {
     width: 100%;
     height: fit-content;
-    font-size: calc(1.5rem + 0.390625dvw);
+    font-size: calc(1.5rem + 0.290625dvw);
     color: white;
     text-align: center;
     margin: auto;
@@ -239,7 +237,7 @@ img {
 .pageTitle {
     width: 100%;
     height: fit-content;
-    font-size: calc(3.5rem + 0.390625dvw);
+    font-size: calc(3rem + 0.290625dvw);
     color: white;
     text-align: right;
     padding-right: 20px;
@@ -255,7 +253,7 @@ img {
         text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
     }
 .nav {
-    background-color: rgb(99, 146, 248);
+    background-color: rgb(46,117,182);
     width: 100%;
     height: fit-content;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -268,14 +266,24 @@ img {
     .nav p {
         color: white;
     }
-    .sticky {
-        background-color: rgb(79, 126, 248);
+    .stickyColourChange1 {
+        background-color: rgb(37,123,147);
 
     }
-    .stickyMore {
-        background-color: rgb(59, 106, 248);
+    .stickyColourChange2 {
+        background-color: rgb(28,129,115);
         /* rgb(13, 68, 186),rgb(7, 46, 131) */
     }
+    .stickyColourChange3 {
+        background-color: rgb(19,135,79);
+    }
+    .stickyColourChange4 {
+        background-color: rgb(10,141,45);
+    }
+    .stickyColourChange5 {
+        background-color: rgb(5, 146, 24);
+    }
+
 
 
 .footer {
@@ -320,7 +328,7 @@ img {
 }
     #header-textBox p {
         font-weight: bolder;
-        font-size: calc(2.5rem + 0.390625dvw);
+        font-size: calc(2.5rem + 0.290625dvw);
         color: black;
     }
 
@@ -361,7 +369,7 @@ img {
     /*transparent text in image container*/
     #wip-text {
         background-color: white;
-        font-size: calc(1.5rem + 0.390625dvw);
+        font-size: calc(1.5rem + 0.290625dvw);
         font-weight: bold;
         margin: auto 30px auto 25px;
         padding: 15px;
@@ -442,7 +450,7 @@ img {
 
 /*page3 specific styles*/
 .subtitle {
-    font-size: calc(1.125rem + 0.390625dvw);
+    font-size: calc(1.125rem + 0.290625dvw);
 }
 
 /* racing game image display */
@@ -459,7 +467,7 @@ img {
 }
     .img-RacingGame img {
         padding: 5px;
-        background-color: rgb(54, 169, 39);
+        /*background-color: rgb(54, 169, 39);*/
     }
 /* word guess scrollable horizontal gallery */
 .img-wordGuess {
