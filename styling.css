@@ -275,16 +275,8 @@ img {
         /* rgb(13, 68, 186),rgb(7, 46, 131) */
     }
     .stickyColourChange3 {
-        background-color: rgb(19,135,79);
+        background-color: rgb(14, 168, 32);
     }
-    .stickyColourChange4 {
-        background-color: rgb(10,141,45);
-    }
-    .stickyColourChange5 {
-        background-color: rgb(5, 146, 24);
-    }
-
-
 
 .footer {
     background-color: rgb(99, 146, 248);

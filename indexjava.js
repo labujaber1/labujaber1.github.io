@@ -5,28 +5,20 @@
 // action when nav scrolls towards top of screen using event listener
 const navColour = document.querySelector(".nav");
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 2100 && window.scrollY < 6000 ) {
+    if (window.scrollY > 2000 && window.scrollY < 6000 ) {
       navColour.classList.add("stickyColourChange1");
     }
-    else if (window.scrollY >= 6000 && window.scrollY < 10000) {
+    else if (window.scrollY >= 6000 && window.scrollY < 12000) {
       navColour.classList.add("stickyColourChange2");
     }
-    else if (window.scrollY >= 10000 && window.scrollY < 13900) {
+    else if (window.scrollY >= 12000) {
       navColour.classList.add("stickyColourChange3");
     } 
-    else if (window.scrollY >= 13900 && window.scrollY < 18000) {
-      navColour.classList.add("stickyColourChange4");
-    }
-    else if (window.scrollY >= 18000 ) {
-      navColour.classList.add("stickyColourChange5");
-    }
     else {
       navColour.classList.remove("sticky");
       navColour.classList.remove("stickyColourChange1");
       navColour.classList.remove("stickyColourChange2");
       navColour.classList.remove("stickyColourChange3");
-      navColour.classList.remove("stickyColourChange4");
-      navColour.classList.remove("stickyColourChange5");
     }
 })
 
@@ -65,3 +57,6 @@ window.onload = function() {
   PDFObject.embed("CV/LawrenceAbuJaberCV_employHistory.pdf","#PDFView2");
 }
 
+window.onscroll = function(e) {
+  console.log(window.scrollY);
+};
