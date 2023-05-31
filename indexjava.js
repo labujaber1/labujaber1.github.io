@@ -5,20 +5,21 @@
 // action when nav scrolls towards top of screen using event listener
 const navColour = document.querySelector(".nav");
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 2000 && window.scrollY < 6000 ) {
+    if (window.scrollY > 1800 && window.scrollY < 6000 ) {
+      navColour.classList.remove("stickyColourChange1","stickyColourChange2","stickyColourChange3");
       navColour.classList.add("stickyColourChange1");
     }
-    else if (window.scrollY >= 6000 && window.scrollY < 12000) {
+    else if (window.scrollY >= 6000 && window.scrollY < 10000) {
+      navColour.classList.remove("stickyColourChange1","stickyColourChange2","stickyColourChange3");
       navColour.classList.add("stickyColourChange2");
     }
-    else if (window.scrollY >= 12000) {
+    else if (window.scrollY >= 10000) {
+      navColour.classList.remove("stickyColourChange1","stickyColourChange2","stickyColourChange3");
       navColour.classList.add("stickyColourChange3");
     } 
     else {
       navColour.classList.remove("sticky");
-      navColour.classList.remove("stickyColourChange1");
-      navColour.classList.remove("stickyColourChange2");
-      navColour.classList.remove("stickyColourChange3");
+      navColour.classList.remove("stickyColourChange1","stickyColourChange2","stickyColourChange3");
     }
 })
 
@@ -57,6 +58,20 @@ window.onload = function() {
   PDFObject.embed("CV/LawrenceAbuJaberCV_employHistory.pdf","#PDFView2");
 }
 
-window.onscroll = function(e) {
+/* low priority data - open further employment history if required */
+/* swapping if statements require 2 clicks!*/
+var pdf2 = document.getElementById("PDFView2");
+function expand() {
+  if (pdf2.style.display === "flex" ){
+    pdf2.style.display = "none";
+  }
+  else {
+    pdf2.style.display = "flex";
+  }
+}
+
+/* Testing */
+/* get scrollY value for nav colour change */
+window.addEventListener("scroll", () => {
   console.log(window.scrollY);
-};
+})
