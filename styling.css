@@ -116,11 +116,7 @@ li i:hover:not(.active) {
 
 /* global return */
 #scrollToTopButton {
-    position: fixed;
-    bottom: 20px;
-    float: right;
-    right: 10%;
-    left: 90%;        
+    position: fixed;      
 } 
 
 /* css animation element fade in courtesy of 
