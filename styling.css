@@ -2,34 +2,29 @@
 /*global start with '*' */
 * {
     margin: 0;
-    padding: 0;
+    /*padding: 0;*/
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 html {
-    /*color-scheme: light dark;*/
     color-scheme: normal;
-    font-size: clamp(1rem, 1dvw, 1.25rem);
+    font-size: clamp(0.8rem, 1dvw, 1.25rem);
 }
 
 body {
-    /*font-family: system-ui;*/
     font-family: 'Libre Franklin', sans-serif;
-    /*font-size: calc(12px + 0.390625dvw);*/
     line-height: 1.5;
-    
 }
 
  /* font styling */
 h1 {
     text-align: center;
-    font-size: calc(1.8rem + 0.290625dvw);
+    font-size: calc(1rem + 0.290625dvw);
 }
 h3 {
-    /*rgb(27, 27, 227),*/
     background: linear-gradient(to right,green,rgb(2, 203, 103));
-    font-size: calc(2rem + 0.290625dvw);
+    font-size: calc(1.6rem + 0.290625dvw);
     font-family: Arial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -231,7 +226,7 @@ img {
 .pageTitle {
     width: 100%;
     height: fit-content;
-    font-size: calc(3rem + 0.290625dvw);
+    font-size: calc(2.5rem + 0.290625dvw);
     color: white;
     text-align: right;
     padding-right: 20px;
@@ -281,7 +276,6 @@ img {
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 /* ####################################### */
 /* home page only */
@@ -340,7 +334,7 @@ img {
 
 .work-in-progress {
     background-image: url("pics/stickynote.jpg");
-    background-size: calc(200px + 3dvw);
+    background-size: calc(150px + 3dvw);
     background-position:left;
     background-repeat: no-repeat;
     background-color: white;
@@ -353,11 +347,11 @@ img {
     margin-bottom: 30px;
 }
     /*transparent text in image container*/
-    #wip-text {
+    #wip-text {   
         background-color: white;
-        font-size: calc(1.5rem + 0.290625dvw);
+        font-size: calc(1rem + 0.290625dvw);
         font-weight: bold;
-        margin: auto 30px auto 25px;
+        margin: auto 30px auto 15px;
         padding: 15px;
         text-align: center;
         mix-blend-mode: screen;
@@ -369,10 +363,8 @@ img {
 .imageCase {
     max-width: 360px;
     height: auto;
-    /*background-color: white;*/
     padding: 0;
     margin: auto;
-   
 }
 .imageFrame {
     width: 350px;
@@ -404,7 +396,7 @@ img {
     background-color:rgb(236, 242, 249);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/* col1 used in page 2 */
+/* col1 used in page 2 & 3 */
 .col1 {
     width: 100%;
     min-height: 20vh;
@@ -413,21 +405,15 @@ img {
     flex-direction: column;
     text-align: center;
     align-content: center;
-    padding: 0 5dvw ;
-    
+    padding: 0 10dvw ;  
 }
-    .col1.litrev {
-        /*background: linear-gradient(transparent,white,rgb(157, 204, 251),white,transparent);*/
-        background-color: white;
-    }
-    .col1.nwconf {
-        /*background-image: linear-gradient( to bottom, transparent, white,rgb(13, 68, 186),rgb(7, 46, 131),white, transparent);*/
-        background-color: white;
-    }
     .colSpacer {
         width: 100%;
-        min-height: 10dvh;
+        min-height: 6dvh;
         margin: 1rem auto 3rem auto;
+        text-align: center;
+        align-items: center;
+        padding: 0 5px;
     }
     .colSpacer.line {
         border-style: solid;
@@ -438,7 +424,6 @@ img {
 .subtitle {
     font-size: calc(1.125rem + 0.290625dvw);
 }
-
 /* racing game image display */
 .img-RacingGame { 
     background-color:white;
@@ -478,7 +463,7 @@ img {
         box-shadow: none;
         margin-bottom: 13px;
     }
-/* Responsive grid gallery container django */
+/* Responsive grid gallery container for django pics */
 .imgGridWrap {
     width: 100%;
     min-height: 100vh;
@@ -493,12 +478,10 @@ img {
     .gallery {
         display: grid;
         gap: 20px;
-        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-        
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));   
     }
     .gallery a:hover {
-        filter: brightness(90%) drop-shadow(5px 5px 5px gray);
-        
+        filter: brightness(90%) drop-shadow(5px 5px 5px gray);   
     }
 
 /* ############################## */
@@ -513,7 +496,7 @@ img {
     /* CV */
     .docFrame {
         background-color:rgb(233, 233, 247);
-        width: 96%;
+        max-width: 800px;
         margin: 20px 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border: yellow;
@@ -550,16 +533,13 @@ img {
         transform: scale(1.3);
         transform-origin: top;
         z-index: 99999;    
-    }
-    
-    
+    } 
+/* used in cv links and button click */
 .itemRowSpace { 
    margin: 0;
    padding: 0;
    display: flex;
    flex-direction: row;
-   
-
 }
 /*media links */
 
@@ -567,10 +547,13 @@ img {
     .wrapper {padding: 0 12% 2rem 12%; }
     /*.docContainer { flex-direction: row; justify-content:space-evenly;}*/
     }
-@media (width < 1000px) { 
+@media ( width >= 600px) and (width < 1000px) { 
     .img-RacingGame { flex-direction: column; align-items: center;}
     }
-
+@media (width < 600px) { 
+    .img-RacingGame { flex-direction: column; align-items: center;}
+    .col1 { padding: 0;}
+}
 @media (prefers-reduced-motion) {
     html {
       scroll-behavior: none;
