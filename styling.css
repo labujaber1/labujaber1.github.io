@@ -26,6 +26,7 @@ h3 {
     background: linear-gradient(to right,green,rgb(2, 203, 103));
     font-size: calc(1.6rem + 0.290625dvw);
     font-family: Arial;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
