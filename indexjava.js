@@ -23,7 +23,7 @@ window.addEventListener("scroll", () => {
     }
 })
 
-/* Enlarge document on click */
+/* Enlarge document frame on click */
 // Calls css class to scale up 
 const docX = document.querySelector(".docFrame");
 docX.addEventListener("click", () => {
@@ -58,7 +58,7 @@ window.onload = function() {
   PDFObject.embed("CV/LawrenceAbuJaberCV_employHistory.pdf","#PDFView2");
 }
 
-/* low priority data - open further employment history if required */
+/* low priority data - hide/show employment history if required */
 /* swapping if statements require 2 clicks!*/
 var pdf2 = document.getElementById("PDFView2");
 function expand() {
@@ -69,6 +69,25 @@ function expand() {
     pdf2.style.display = "flex";
   }
 }
+
+/* show more text */
+/* event only for text-container as parent */
+function toggleText(icon) {
+  var text = icon.parentNode.nextElementSibling;
+  var icons = icon.firstElementChild;
+  if (text.classList.contains("hide-text")) {
+    text.classList.remove("hide-text");
+    /*icons.classList.add("rotateY180");*/
+    icons.classList.remove("fa-arrow-down");
+    icons.classList.add("fa-arrow-up");
+  } else {
+    text.classList.add("hide-text");
+    /*icons.classList.remove("rotateY180");*/
+    icons.classList.remove("fa-arrow-up");
+    icons.classList.add("fa-arrow-down");
+  }
+}
+
 
 /* Testing */
 /* get scrollY value for nav colour change */

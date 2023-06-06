@@ -397,6 +397,30 @@ img {
     background-color:rgb(236, 242, 249);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+    .show-text {
+        display: block;
+    }
+    .hide-text {
+        display: none;
+    }
+  
+    .toggle-icon {
+        cursor: pointer;
+    }
+    
+    .fa-arrow-down,
+    .fa-arrow-up {
+        margin: 0 2px;
+        transition: transform 0.3s;
+        transform: scale(1);
+    }
+    
+    .rotateY180 {
+        transform: rotate(180deg);
+    }
+  
+    
+
 /* col1 used in page 2 & 3 */
 .col1 {
     width: 100%;
@@ -442,28 +466,48 @@ img {
         /*background-color: rgb(54, 169, 39);*/
     }
 /* word guess scrollable horizontal gallery */
-.img-wordGuess {
+.gallery-container {
     display: flex;
-    max-width: 450px;
-    height: max-content;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    background-color: white;
-    margin: 0 auto 10px auto;;
-    margin-right: auto;
-    border-style: ridge;
-    border-color: aliceblue;
+    flex-direction: row;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: fit-content;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-    .img-wordGuess img {
-        max-width: 450px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        scroll-snap-align: center;
-        box-shadow: none;
-        margin-bottom: 13px;
-    }
+      
+        .slide {
+            flex: 1;
+            overflow: hidden;
+            transition: 0.5s;
+            margin: 0 2%;
+            box-shadow: 0 20px 30px rgba(0,0,0,.1);
+            line-height: 0;   
+        }
+        
+        .slide > img {
+            width: 200%;
+            height: calc(100% - 10vh);
+            object-fit: cover; 
+            transition: 0.5s;
+            border-color: white;
+            border-style: solid;
+            border-width: 5px;
+
+        }
+        .slide > span {
+            font-size: calc(1rem + 0.290625dvw);
+            display: block;
+            text-align: center;
+            height: 40px;
+            padding-top: 20px;  
+        }
+        .slide:hover { flex: 1 1 50%; }
+        .slide:hover > img {
+            width: 100%;
+            height: 100%;
+        }
+      
 /* Responsive grid gallery container for django pics */
 .imgGridWrap {
     width: 100%;
@@ -549,11 +593,13 @@ img {
     /*.docContainer { flex-direction: row; justify-content:space-evenly;}*/
     }
 @media ( width >= 600px) and (width < 1000px) { 
-    .img-RacingGame { flex-direction: column; align-items: center;}
-    }
+    .img-RacingGame { flex-direction: column; align-items: center; }
+    .gallery-container { flex-direction: column; }
+}
 @media (width < 600px) { 
-    .img-RacingGame { flex-direction: column; align-items: center;}
-    .col1 { padding: 0;}
+    .img-RacingGame { flex-direction: column; align-items: center; }
+    .col1 { padding: 0; }
+    .gallery-container { flex-direction: column; }
 }
 @media (prefers-reduced-motion) {
     html {

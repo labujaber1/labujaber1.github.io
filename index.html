@@ -143,12 +143,19 @@
             <div class="title"><p id="p6">Literature Review Resource - LitRevResourceMVP</p></div>
             <div class="text-container">
                 <p> The purpose of this tool is to provide a single place for a student to record resources 
-                    collected for an academic piece of writing. Resources are used and referenced within 
+                    collected for an academic piece of writing.   
+                    <span class="toggle-icon" onclick="toggleText(this)">
+                        <i class="fa fa-arrow-down"></i>
+                    </span> 
+               
+                    <p class="show-text hide-text"> Resources are used and referenced within 
                     an assignment and can be collected from either an e-source, such as webpages or e-books,
                     or a physical source, such as books or journals. Storing them in a static document or 
                     excel file can be used but is often difficult to sort alphabetically or by subject 
-                    type to use when comparing them. 
-                </p>
+                    type to use when comparing them.</p>
+                </p> 
+                   
+                
             </div>
             <div class="imageCase pp reveal fade-left" >
                 <img src="pics/LitRevMain.jpg" alt="Main menu image" >
@@ -157,10 +164,15 @@
             <div class="text-container">
                 <p> Storing these resources in a database provides the user with enough space and organisation
                     potential to use this for all assignments in each module of any level academic course. 
-                    To keep it simple for the user a connection string to a SQL server can be constructed and
+                    <span class="toggle-icon" onclick="toggleText(this)">
+                        <i class="fa fa-arrow-down"></i>
+                    </span> 
+               
+                    <p class="show-text hide-text">To keep it simple for the user a connection string to a SQL server can be constructed and
                     use the windows username and password to authorise a connection. The string is editable
                     once created to add a username and password if required. A copy of the script to create
-                    a simple three table database is included to help with the database creation. 
+                    a simple three table database is included to help with the database creation.</p>
+                    
                 </p>
             </div> 
             <div class="imageCase pp reveal fade-bottom" >
@@ -187,9 +199,14 @@
             </div>  
             <div class="text-container">
                 <p> Clicking an assignment will display the resources in the bottom table. These can then be
-                    edited or a new one added. The search function can be used to find a resource by its 
+                    edited or a new one added. 
+                    <span class="toggle-icon" onclick="toggleText(this)">
+                        <i class="fa fa-arrow-down"></i>
+                    </span> 
+               
+                    <p class="show-text hide-text">The search function can be used to find a resource by its 
                     ID number or group resources by category which are then displayed in the bottom table.
-                    The category is used to group resources and is entered and controlled by the user for each new resource. 
+                    The category is used to group resources and is entered and controlled by the user for each new resource.</p> 
                 </p>
             </div>
             <div class="imageCase pp reveal fade-left" >
@@ -199,12 +216,17 @@
             <div class="text-container">
                 <p> Each field has a placeholder to save space so the overall tool size is as small as possible.
                     This enables it to be open and used alongside another application such as a browser or word
-                    document. Space is given to add notes about the resource and include relevant information 
+                    document. 
+                    <span class="toggle-icon" onclick="toggleText(this)">
+                        <i class="fa fa-arrow-down"></i>
+                    </span> 
+               
+                    <p class="show-text hide-text">Space is given to add notes about the resource and include relevant information 
                     that can be referred to without going back to the original source. A button is included for 
                     the user to keep track of the total characters used but an error message will appear when 
                     saving if this is exceeded or fields are missing data. An example is also shown which is 
                     used as a description of the assignment rather than a resource. It is possible to write a 
-                    large portion of an assignment to then be copied to a document and finalised for submission.
+                    large portion of an assignment to then be copied to a document and finalised for submission.</p>
                 </p>
             </div>
             <div class="imageCase pp reveal fade-bottom" >
@@ -252,37 +274,51 @@
         <div class="text-container">
             <p> A script containing a set of network configuration commands can be created from template text files stored 
                 in a designated folder. The template files are accessed and the contents displayed in the left of the 
-                display for the user to select and begin constructing a script file to the right. Each template file can 
+                display for the user to select and begin constructing a script file to the right. 
+                <span class="toggle-icon" onclick="toggleText(this)">
+                    <i class="fa fa-arrow-down"></i>
+                </span> 
+           
+                <p class="show-text hide-text">Each template file can 
                 include notes for the user's reference by using a ? to precede them. The command script is created in an 
                 editable display for the user to add additional data required after a set command such as an IP address or 
                 password. Show commands can also be included as reference and displayed in a separate readonly text box. 
-                The user has full control and access rights to the template files for amendment. </p> 
-            <p> Once a script is created in the editor it can then be saved to a text file or copied and pasted directly to 
+                The user has full control and access rights to the template files for amendment. <br> 
+                Once a script is created in the editor it can then be saved to a text file or copied and pasted directly to 
                 the command line of a network device. A folder is included to store these files but again the user has full 
                 access rights to store them elsewhere. Right clicking in the editor will display a menu with additional 
                 options such as opening a help file, append the script to an existing file, copy/paste, and file saving. 
                 The terminal software putty is included for the user to copy the commands to a directly connected device. 
+                </p>
             </p>
             <div class="imageCase pp" ><img src="pics/NWCreateScript.jpg" alt="Create script image" ></div>
         </div>
     
         <div class="text-container">
-            <p> A script can also be delivered to a device using a telnet connection. Whilst this does require the setup of 
-                a device with username, password, ip address, and telnet access enabled, it acts as another method of 
-                delivery. This is intended to extend a learners ability and exposure to configuration procedures outside 
+            <p> A script can also be delivered to a device using a telnet connection. 
+                <span class="toggle-icon" onclick="toggleText(this)">
+                    <i class="fa fa-arrow-down"></i>
+                </span> 
+                <p class="show-text hide-text">Whilst this does require the setup of a device with username, password,
+                ip address, and telnet access enabled, it acts as another method of delivery. 
+                This is intended to extend a learners ability and exposure to configuration procedures outside 
                 of a virtual environment. The readonly display on the right shows the retrieval of the devices command line
                 for the user to assess if each command sent was correct. If a command was incorrectly entered by a spelling
                 mistake for example the connection will continue and not produce an error report as is the design of a 
-                telnet delivery. 
+                telnet delivery. </p>
             </p>
             <div class="imageCase pp" ><img src="pics/NWTelnetScreen.jpg" alt="Telnet image" ></div>
         </div>
         <div class="text-container">
-            <p> The tool has been extended further to include a method of running configuration file backup and restore. 
+            <p> It has been extended further to include a method of running configuration file backup and restore.
+                <span class="toggle-icon" onclick="toggleText(this)">
+                    <i class="fa fa-arrow-down"></i>
+                </span> 
+                <p class="show-text hide-text">
                 Using a telnet connection and a server TFTPD64 included copy running-config commands are sent to a device. 
                 Retrieved configuration files can be selected and displayed for viewing or editing for advanced learners. 
                 The running-config files are chosen rather than a startup-config file to minimise the effect of 
-                configuration errors.
+                configuration errors.</p>
             </p>
             <div class="imageCase pp" ><img src="pics/NWTFTPScreen.jpg" alt="TFTP image" ></div>
             <p> The tool has been written in C# and used the .NET windows forms framework. Each form is fully decoupled 
@@ -318,10 +354,14 @@
                 for the race to start. Messages are sent to establish the game start parameters and 
                 updated car positions, displayed in a readonly communications display to the right 
                 of the application. The game ends when either player completes 3 laps and is 
-                congratulated with an image displayed in the center console and a hearty cheer. </p>
-            <p> The game includes collision detection where the speed is reversed to enact a bouncing 
+                congratulated with an image displayed in the center console and a hearty cheer. 
+                <span class="toggle-icon" onclick="toggleText(this)">
+                    <i class="fa fa-arrow-down"></i>
+                </span> 
+                <p class="show-text hide-text">
+                The game includes collision detection where the speed is reversed to enact a bouncing 
                 effect. Sound effects are also included as are separate key controls for each car and 
-                a choice of two tracks. 
+                a choice of two tracks. </p>
             </p>
         </div>
        
@@ -352,24 +392,29 @@
         </div>
         <div class="text-container">
             <p> This is a Python console word guessing game based on hangman but without the graphics. The 
-                computer is the controller and the player tries to guess a word from a loaded dictionary 
-                and randomly selected word length. The word length is in the range 5 - 12 and the player 
+                computer is the controller and the player tries to guess a word from a loaded dictionary. 
+                The word length is randomly selected between 5 - 12 letters which the player 
                 gets double the chosen length in guesses. There is a hard or easy mode for the player to 
                 choose and an option to end the game after each play otherwise there is no limit on game 
                 play.
             </p>
-            <p> The computer does cheat a little, instead of selecting a single word at the start the 
-                computer filters the dictionary list according to length of word and each letter guessed. 
+            <p> The computer does cheat a little,... 
+                <span class="toggle-icon" onclick="toggleText(this)">
+                    <i class="fa fa-arrow-down"></i>
+                </span> 
+                <p class="show-text hide-text">...instead of selecting a single word at the start the 
+                computer filters the dictionary list according to the word length and each letter guessed. 
+                
                 The computer calculates the total words for each filter criteria and selects the collection 
                 according to parameters of the easy or hard modes. The aim for the computer is to have more 
                 than one word remaining in the bank when the player reaches the end of their guesses to 
                 guarantee winning the game.
-            </p>
-            <p> The easy approach is to select the largest bank of words from each filtering sequence 
+            <br>
+                The easy approach is to select the largest bank of words from each filtering sequence 
                 whilst the hard level uses a scoring method to select a bank with the least common letters 
                 found in the provided dictionary.
-            </p>
-            <p> An additional calculation is made and applied to the random word length selection to slightly 
+            <br>
+                An additional calculation is made and applied to the random word length selection to slightly 
                 reduce the probability of larger word lengths selected. The larger the word the more guesses 
                 given so this just adds a further sprinkling of favour in the computers direction.
                 A step too far?
@@ -380,19 +425,29 @@
     <!-- img-wordGuess bleeds into text-container changing margins if not separated into col1 -->
     <div class="col1">   
         <div class="subtitle">
-            <p id="p6"> Horizontal scroll gallery </p>
+            <p id="p6"> Gallery </p>
         </div>
-        <div class="img-wordGuess">
-            <img src="pics/wordguessstart.jpg" alt="Word guess start">
-            <img src="pics/wordguess2.jpg" alt="Word guess 2">
-            <img src="pics/wordguess3.jpg" alt="Word guess 3">
-            
+        <div class="gallery-container">          
+            <div class="slide">
+                <div><img src="pics/wordguessstart.jpg" alt="Word guess start">                   
+                </div>
+                <span>Start</span>
+            </div>
+            <div class="slide">
+                <div><img src="pics/wordguess2.jpg" alt="Word guess 2">
+                </div>
+                <span>Play</span>
+            </div>
+            <div class="slide">
+                <div><img src="pics/wordguess3.jpg" alt="Word guess 3">              
+                </div>
+                <span>End</span>
+            </div>
         </div>
         <div class="colSpacer line">
             <p>Download game<a href="Wordguess/WordGuessPlayable.zip" download><u>zip</u></a>file 
                 or see it on<a href="https://github.com/labujaber1/WordGuess"><u>github.</u></a></p>
         </div>
-        
     </div>
     <!-- Divider -->
     <div class="textBoxDivider">
@@ -483,6 +538,7 @@
         <li class="user"><a href="https://en.wikipedia.org/wiki/Wisbech"><i class="fa fa-home"></i> Wisbech, Cambridgeshire</a></li>
     </ul>
 </div>
+
 
 <script src="lightbox/lightbox-plus-jquery.min.js"></script>
 <script src="indexjava.js"></script>
