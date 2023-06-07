@@ -46,7 +46,7 @@
     
     <div class="textBoxLeft">
         <h2>Hello,</h2>
-        <p> my name is Lawrence and I am a newly graduated computer science student aspiring to be a software developer. 
+        <p> my name is Lawrence and I am a computer science graduate aspiring to be a software developer. 
             Working on course projects I have caught the coding and developer bug, there I said it and its now a life 
             long affliction. 
             As a result of this condition a couple of projects were created from a personal need and for those in a similar position.
@@ -119,11 +119,11 @@
     <!--<div id="scrollButton"><a href="#Top"><i class="fa fa-toggle-up"></i></a></div>-->
     <div id="home-footer">
         <ul>
-            <li class="user"><a href="https://uk.linkedin.com/in/lawrence-abu-jaber-7826b2221">
+            <li class="user"><a href="https://uk.linkedin.com/in/lawrence-abu-jaber-7826b2221" target="_blank">
                 <i class="fa fa-linkedin "></i> LinkedIn</a></li>
-            <li class="user"><a href="mailto:lawrenceabujaber@gmail.com">
+            <li class="user"><a href="mailto:lawrenceabujaber@gmail.com" target="_blank">
                 <i class="fa fa-envelope"></i> Email: lawrenceabujaber @gmail.com</a></li>
-            <li class="user"><a href="https://en.wikipedia.org/wiki/Wisbech">
+            <li class="user"><a href="https://en.wikipedia.org/wiki/Wisbech" target="_blank">
                 <i class="fa fa-home"></i> Wisbech, Cambridgeshire</a></li>
         </ul>
     </div>
@@ -215,13 +215,13 @@
 
             <div class="text-container">
                 <p> Each field has a placeholder to save space so the overall tool size is as small as possible.
-                    This enables it to be open and used alongside another application such as a browser or word
-                    document. 
                     <span class="toggle-icon" onclick="toggleText(this)">
                         <i class="fa fa-arrow-down"></i>
                     </span> 
                
-                    <p class="show-text hide-text">Space is given to add notes about the resource and include relevant information 
+                    <p class="show-text hide-text">This enables it to be open and used alongside another application such as a browser or word
+                    document. 
+                    Space is given to add notes about the resource and include relevant information 
                     that can be referred to without going back to the original source. A button is included for 
                     the user to keep track of the total characters used but an error message will appear when 
                     saving if this is exceeded or fields are missing data. An example is also shown which is 
@@ -262,7 +262,12 @@
         <div class="text-container">
             
             <p> This tool has been developed from a need to reduce the repetitive typing of learned network commands 
-                when a learner is configuring routers and switches in a network topology. It can be used on directly 
+                when a learner is configuring routers and switches in a network topology. 
+                <span class="toggle-icon" onclick="toggleText(this)">
+                    <i class="fa fa-arrow-down"></i>
+                </span> 
+           
+                <p class="show-text hide-text">It can be used on directly 
                 connected devices, virtual devices in GNS3, and in a limited capacity for Packet Tracer. Similar to 
                 the first project a menu is used as a container for a user to open an instance of each required form 
                 using a singleton design pattern.  
@@ -274,7 +279,7 @@
         <div class="text-container">
             <p> A script containing a set of network configuration commands can be created from template text files stored 
                 in a designated folder. The template files are accessed and the contents displayed in the left of the 
-                display for the user to select and begin constructing a script file to the right. 
+                display for the user to select and begin constructing a script file on the right. 
                 <span class="toggle-icon" onclick="toggleText(this)">
                     <i class="fa fa-arrow-down"></i>
                 </span> 
@@ -349,16 +354,17 @@
         <div class="text-container">
             <p> The game as the title and image infers is a two player online and offline 2D Java 
                 racing game based on the client-server model and multithreading. A server is hosted 
-                and players connect sending messages using the TCP protocol. The first connected 
+                and players connect sending messages using the TCP protocol. 
+                <span class="toggle-icon" onclick="toggleText(this)">
+                    <i class="fa fa-arrow-down"></i>
+                </span> 
+                <p class="show-text hide-text">The first connected 
                 player is established as player 1 by the server but requires both players to connect 
                 for the race to start. Messages are sent to establish the game start parameters and 
                 updated car positions, displayed in a readonly communications display to the right 
                 of the application. The game ends when either player completes 3 laps and is 
                 congratulated with an image displayed in the center console and a hearty cheer. 
-                <span class="toggle-icon" onclick="toggleText(this)">
-                    <i class="fa fa-arrow-down"></i>
-                </span> 
-                <p class="show-text hide-text">
+                
                 The game includes collision detection where the speed is reversed to enact a bouncing 
                 effect. Sound effects are also included as are separate key controls for each car and 
                 a choice of two tracks. </p>
@@ -512,19 +518,39 @@
     <p>Curriculum Vitae</p>
 </div>
 <div class="wrapper">
-    <div class="docContainer">
-        <div class="docFrame">
-            <h3>Curriculum Vitae</h3>
-            <div id="PDFView1"></div>
-            <a href="CV/LawrenceAbuJaberCV_singlepage.pdf"><u>Download CV</u></a>
-        </div>
-        <div class="docFrame">
-            <div class="itemRowSpace">
-                <h3>Employment history</h3>
-                <button onclick="expand()" type="button" style="border-style: none;"><i class="fa fa-expand "></i></button>
+    <div class="col1">
+        <div class="docContainer">
+            <div class="text-container">
+                <h1>Skills</h1>
+                <p>Familiar with: C#, Java, Python (incl. Django), .NET framework, HTML/CSS, Javascript, SQL (MySQL, SQLite, Express), Git.</p>
             </div>
-            <div id="PDFView2"></div>
-            <a href="CV/LawrenceAbuJaberCV_employHistory.pdf"><u>Download history</u></a>
+            <div class="text-container">
+                <h1>Software used</h1>
+                <p>Visual Studio, Visual Studio Code, Eclipse, IntelliJ IDEA, Matlab, Packet Tracer, Wireshark.</p>
+            </div>
+        
+            <div class="docFrame">
+                <div class="itemRowSpace">
+                    <h3>Curriculum Vitae</h3>
+                    <button onclick="expand(1)" type="button" style="border-style: none;"><i class="fa fa-expand "></i></button>
+                </div>
+                <div id="PDFView1"></div>
+                <a href="CV/LawrenceAbuJaberCV_singlepage.pdf"><u>Download CV</u></a>
+            </div>
+
+            <div class="text-container">
+                <h1>Certificates</h1>
+                <p>MATAB Onramp and Image Processing Onramp</p>
+            </div>
+            
+            <div class="docFrame">
+                <div class="itemRowSpace">
+                    <h3>Employment history</h3>
+                    <button onclick="expand(2)" type="button" style="border-style: none;"><i class="fa fa-expand "></i></button>
+                </div>
+                <div id="PDFView2"></div>
+                <a href="CV/LawrenceAbuJaberCV_employHistory.pdf"><u>Download history</u></a>
+            </div>
         </div>
     </div>
 </div>
@@ -533,9 +559,9 @@
 <!-- ####################### CV end ################################ -->
 <div class="footer">
     <ul>
-        <li class="user"><a href="https://uk.linkedin.com/in/lawrence-abu-jaber-7826b2221"><i class="fa fa-linkedin "></i> LinkedIn</a></li>
-        <li class="user"><a href="mailto:lawrenceabujaber@gmail.com"><i class="fa fa-envelope"></i> Email: lawrenceabujaber @gmail.com</a></li>
-        <li class="user"><a href="https://en.wikipedia.org/wiki/Wisbech"><i class="fa fa-home"></i> Wisbech, Cambridgeshire</a></li>
+        <li class="user"><a href="https://uk.linkedin.com/in/lawrence-abu-jaber-7826b2221" target="_blank"><i class="fa fa-linkedin "></i> LinkedIn</a></li>
+        <li class="user"><a href="mailto:lawrenceabujaber@gmail.com" target="_blank"><i class="fa fa-envelope"></i> Email: lawrenceabujaber @gmail.com</a></li>
+        <li class="user"><a href="https://en.wikipedia.org/wiki/Wisbech" target="_blank"><i class="fa fa-home"></i> Wisbech, Cambridgeshire</a></li>
     </ul>
 </div>
 

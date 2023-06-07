@@ -25,14 +25,14 @@ window.addEventListener("scroll", () => {
 
 /* Enlarge document frame on click */
 // Calls css class to scale up 
-const docX = document.querySelector(".docFrame");
+/*const docX = document.querySelector(".docFrame");
 docX.addEventListener("click", () => {
     if (docX.classList.contains("docEnlarge")) { 
         docX.classList.remove("docEnlarge");
     } else {
         docX.classList.add("docEnlarge");
     }
-})
+})*/
 
 /*courtesy of https://alvarotrigo.com/blog/css-animations-scroll/*/
 /* fade in image effect from left, right and bottom */
@@ -59,14 +59,13 @@ window.onload = function() {
 }
 
 /* low priority data - hide/show employment history if required */
-/* swapping if statements require 2 clicks!*/
-var pdf2 = document.getElementById("PDFView2");
-function expand() {
-  if (pdf2.style.display === "flex" ){
-    pdf2.style.display = "none";
+function expand(pdfNum) {
+  var pdf = document.getElementById("PDFView"+pdfNum);
+  if (pdf.style.display === "flex" ){
+    pdf.style.display = "none";
   }
   else {
-    pdf2.style.display = "flex";
+    pdf.style.display = "flex";
   }
 }
 
@@ -77,12 +76,12 @@ function toggleText(icon) {
   var icons = icon.firstElementChild;
   if (text.classList.contains("hide-text")) {
     text.classList.remove("hide-text");
-    /*icons.classList.add("rotateY180");*/
+    /*icons.classList.add("rotate180");*/
     icons.classList.remove("fa-arrow-down");
     icons.classList.add("fa-arrow-up");
   } else {
     text.classList.add("hide-text");
-    /*icons.classList.remove("rotateY180");*/
+    /*icons.classList.remove("rotate180");*/
     icons.classList.remove("fa-arrow-up");
     icons.classList.add("fa-arrow-down");
   }
