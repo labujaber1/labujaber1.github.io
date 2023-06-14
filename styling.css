@@ -133,6 +133,19 @@ https://alvarotrigo.com/blog/css-animations-scroll/*/
     .active.fade-in {
         animation: fade-in 1s ease-in-out;
     }
+    .active.img-animate {
+        animation: img-animate 3s ease-in-out;
+    }
+    @keyframes img-animate {
+        0% {
+            transform: scale(1.0) rotate(-2deg);
+            opacity: 0;
+        }
+        100% {
+            
+            opacity: 1.0;
+        }
+    }
     @keyframes fade-bottom {
         0% {
         transform: translateY(50px);
@@ -300,6 +313,7 @@ and different content in each */
         transform: scale(1.0) rotate(-2deg);
         opacity: 1.0;
     }
+    
 
 /* used in home header for name */    
 #header-textBox {
@@ -357,9 +371,30 @@ and different content in each */
         text-align: center;
         mix-blend-mode: screen;
     }
+/* cards in home page for skills etc */
+.card {
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgb(176, 176, 244);
+    margin: 2px;
+
+}
+.card-title {
+    min-width: 25%;
+    padding: 5px;
+    color: white;
+    font-style: oblique;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(67, 98, 155);
+    border-radius: 5px;
+}
 
 /* image cards */
-/*image cards that enlarge on hover */
+/*image cards that enlarge slightly on hover */
 .imageCase {
     max-width: 360px;
     height: auto;
