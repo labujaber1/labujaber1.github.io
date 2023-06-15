@@ -295,12 +295,11 @@ and different content in each */
 /* home page only */
 .header {
     width: 100%;
-    height: 22dvh;
+    height: auto;
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    align-items: stretch;
+    /*align-items: stretch;*/
     background-color: rgb(46,117,182); 
-    gap: 20px;
 }
     .header img {
         content: "";
@@ -314,10 +313,10 @@ and different content in each */
     }
     #img-pos {
         flex-grow: 1;
-        
+        margin: auto auto;
     }
     .header img:hover {
-        border-radius: 50%;
+        /*border-radius: 50%;*/
         transform: scale(1.0) ;
         box-shadow: none;
     }
@@ -328,9 +327,9 @@ and different content in each */
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-grow: 2;
+    flex-grow: 1;
     z-index: 1111;
-    
+    margin: auto 0;
 }
     #header-textBox p {
         font-weight: bolder;
@@ -392,7 +391,7 @@ and different content in each */
 
 }
 .card-title {
-    min-width: 25%;
+    min-width: 30%;
     padding: 5px;
     color: white;
     font-style: oblique;
@@ -589,7 +588,7 @@ and different content in each */
 .docFrame {
     background-color:rgb(233, 233, 247);
     max-width: 800px;
-    margin: 20px 10px;
+    margin: 20px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: yellow;
     border-style: ridge;
