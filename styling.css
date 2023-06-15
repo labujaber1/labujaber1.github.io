@@ -91,7 +91,7 @@ i {
     color: orange;
     transform: scale(2);
     z-index: -1;
-    margin: 3px;
+    margin: 4px;
 }
 
 /* highlight active links on hover */
@@ -288,6 +288,7 @@ and different content in each */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    font-size: clamp(0.8rem, 0.9dvw, 1.25rem);
     /*flex-direction: column;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -344,6 +345,7 @@ and different content in each */
     background-color: rgb(38, 17, 17); 
     width: 100%;
     min-height: 15dvh;
+    font-size: clamp(0.8rem, 0.9dvw, 1.25rem);
     margin: 10px 0 30px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
