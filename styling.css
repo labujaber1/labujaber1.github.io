@@ -74,7 +74,6 @@ ul {
 /*class for font awesome icons*/
 .user {
     flex:1;
-    
 }
 a {
     display:inline-block;
@@ -90,20 +89,19 @@ i {
     width: 20px;
     color: orange;
     transform: scale(2);
-    z-index: -1;
     margin: 4px;
 }
 
 /* highlight active links on hover */
 li a:hover:not(.active) {
-    transition: all 0.5s ease-in-out;
-    transform: scale(1.05);
+    transition: all 500ms ease-in-out;
+    transform: scale(1.03);
     color:white;
 }
 li i:hover:not(.active) {   
+    transform: scale(2.03);
+    transition: all 500ms ease-in-out;
     color:white;
-    transform: scale(2.05);
-    transition: all 0.5s ease-in-out;
 }
 
 /* global return */
@@ -307,7 +305,6 @@ and different content in each */
         content: "";
         max-width: 200px;
         transform: scale(0.7);
-        z-index: -1111;
         transition: all 1s ease-in-out;
         box-shadow: none;
         border-radius: 50%;
@@ -318,9 +315,8 @@ and different content in each */
         margin: auto auto;
     }
     .header img:hover {
-        /*border-radius: 50%;*/
         transform: scale(1.0) ;
-        box-shadow: none;
+        box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.6);
     }
     
 /* used in home header for name */    
@@ -330,7 +326,6 @@ and different content in each */
     align-items: center;
     flex-direction: column;
     flex-grow: 1;
-    z-index: 1111;
     margin: auto 0;
 }
     #header-textBox p {
@@ -353,9 +348,6 @@ and different content in each */
     justify-content: space-evenly;
     flex-direction: column;
 }
-    #home-footer p {
-        color: white;
-    }
     #home-footer a {
         color: white;
     }
@@ -647,6 +639,7 @@ and different content in each */
     .img-RacingGame { flex-direction: column; align-items: center; }
     .col1 { padding: 0; }
     .gallery-container { flex-direction: column; }
+    .header img:hover { transform: scale(0.6); margin: 0;}
 }
 @media (prefers-reduced-motion) {
     html {
