@@ -35,7 +35,6 @@ h3 {
     color: black;
     font-style: italic;
     font-weight: bold;
-    
 }
 /*at https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/*/
 /*in and out text shadow grey back*/
@@ -88,7 +87,7 @@ a {
 }
 /*font awesome icons*/
 i {
-    width: 30px;
+    width: 20px;
     color: orange;
     transform: scale(2);
     z-index: -1;
@@ -287,7 +286,9 @@ and different content in each */
     margin-top: 20px;
     min-height: 15dvh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*flex-direction: column;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
