@@ -419,7 +419,7 @@ and different content in each */
     border: 2px solid rgb(233, 225, 225);
     border-radius: 3px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: all 0.4s ease-in-out;
+    transition: all 400ms ease-in-out;
 }
     .imageFrame:hover {
         filter: brightness(110%);
@@ -439,7 +439,7 @@ and different content in each */
     padding: 5px;
     margin: 20px auto;
     border-radius: 3px;
-    background-color:rgb(236, 242, 249);
+    background-color:rgba(250, 255, 255);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
     /* show and hide additional descriptive text */
@@ -561,21 +561,36 @@ and different content in each */
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 10px 8%;
+    padding: 1% 1%;
+    
 }
     /* gallery */
     .gallery {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));   
+        display: none;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        transition: all 500ms ease-in-out;   
     }
-    .gallery a:hover {
+    .imgGridWrap a:hover {
         filter: brightness(90%) drop-shadow(5px 5px 5px gray);   
     }
-
+    .btn-gallery {
+        margin: 1rem auto;
+        background-color: transparent;
+        border-style: none;
+        cursor: pointer;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        padding: 0.5rem;
+    }
+    .btn-gallery:hover {
+        box-shadow: 0 4px 8px 0 rgb(14, 168, 32, 0.6);
+        background-color: greenyellow;
+    }
 /* ############################## */
 /*page cv document display */
     /* CV */
@@ -646,7 +661,7 @@ and different content in each */
     .img-RacingGame { flex-direction: column; align-items: center; }
     .col1 { padding: 0; }
     .gallery-container { flex-direction: column; }
-    .header img:hover { transform: scale(0.6); margin: 0;}
+    .header img:hover { margin: 0;}
     
 }
 

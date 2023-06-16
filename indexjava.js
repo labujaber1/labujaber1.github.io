@@ -87,7 +87,21 @@ function toggleText(icon) {
   }
 }
 
-
+/* Hide/show Django gallery intended for mobile as lightbox not so good*/ 
+function toggleGallery(icon) {
+  var gallery = document.querySelector(".gallery");
+  var icons = icon.firstElementChild;
+  if (gallery.style.display == "grid") {
+    gallery.style.display = "none";
+    icons.classList.remove("fa-arrow-up");
+    icons.classList.add("fa-arrow-down");
+  } else {
+    gallery.style.display = "grid";
+    icons.classList.remove("fa-arrow-down");
+    icons.classList.add("fa-arrow-up");
+    
+  }
+}
 /* Testing */
 /* get scrollY value for nav colour change */
 window.addEventListener("scroll", () => {
