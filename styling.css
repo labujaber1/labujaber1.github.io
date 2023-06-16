@@ -353,31 +353,33 @@ and different content in each */
     #home-footer a {
         color: white;
     }
-/* bottom of home page for planned project */
+/* in home page for future planned project */
 .work-in-progress {
-    background-image: url("pics/stickynote.jpg");
-    background-size: calc(150px + 3dvw);
-    background-position:left;
-    background-repeat: no-repeat;
-    background-color: white;
-    min-height: 200px;
+    width: 100%;
     box-shadow: 0 4px 8px 0 rgba(135, 163, 131, 0.959), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    display: flex;
     border-radius: 3px;
-    padding: 15px;
-    align-items: center;
+    display: inline-block;
+    padding: 1rem;
+    text-align: justify;
     margin-bottom: 30px;
 }
-    /*transparent text in image container*/
-    #wip-text {   
-        background-color: white;
-        font-size: calc(1rem + 0.290625dvw);
-        font-weight: bold;
-        margin: auto 30px auto 15px;
-        padding: 15px;
+    .wip-image-container {
+        background-color: #84c4f8;
+        background-image: url("pics/stickynote.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
         text-align: center;
-        mix-blend-mode: screen;
+        max-width: 100px;
+        height: auto;
+        padding: 20px 10px;
+        float: left;
     }
+
+    .wip-text {
+        color: gray;
+        font-size: 14px;
+    }
+    
 /* cards in home page for skills etc */
 .card {
     width: 100%;
@@ -393,7 +395,9 @@ and different content in each */
     color: white;
     font-style: oblique;
     display: flex;
+    flex-wrap: wrap;
     font-weight: bold;
+    text-overflow: ellipsis;
     align-items: center;
     justify-content: center;
     background-color: rgb(67, 98, 155);
@@ -642,7 +646,9 @@ and different content in each */
     .col1 { padding: 0; }
     .gallery-container { flex-direction: column; }
     .header img:hover { transform: scale(0.6); margin: 0;}
+    
 }
+
 @media (prefers-reduced-motion) {
     html {
       scroll-behavior: none;
