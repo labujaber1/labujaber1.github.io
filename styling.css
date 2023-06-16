@@ -377,7 +377,8 @@ and different content in each */
 
     .wip-text {
         color: gray;
-        font-size: 14px;
+        font-size: 16px;
+        font-family:'Edu SA Beginner',cursive;
     }
     
 /* cards in home page for skills etc */
