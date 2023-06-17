@@ -22,7 +22,7 @@ html {
 body {
     font-family: 'Libre Franklin', sans-serif;
     line-height: 1.5;
-    /*background-color: rgb(163, 122, 122);*/
+    background-color: rgb(250,250,250);
 }
 
  /* font styling */
@@ -209,6 +209,7 @@ img {
 /* general text box container */ 
 .textBox {
     text-align: center;
+    width: 100%;
     padding: 10px 20px;
 }
 /* used for intro on home */
@@ -367,6 +368,7 @@ and different content in each */
     padding: 1rem;
     text-align: justify;
     margin-bottom: 30px;
+    background-color: white;
 }
     .wip-image-container {
         background-color: #84c4f8;
@@ -393,7 +395,7 @@ and different content in each */
     border-radius: 5px;
     box-shadow: var(--box-shadow);
     margin: 2px;
-
+    background-color: white;
 }
 .card-title {
     min-width: 30%;
@@ -410,6 +412,7 @@ and different content in each */
     border-radius: 5px;
 }
 
+
 /* image cards */
 /*image cards that enlarge slightly on hover */
 .imageCase {
@@ -425,6 +428,7 @@ and different content in each */
     border-radius: 3px;
     box-shadow: var(--box-shadow);
     transition: all 400ms ease-in-out;
+    background-color: whitesmoke;
 }
     .imageFrame:hover {
         filter: brightness(110%);
@@ -583,7 +587,7 @@ and different content in each */
     }
     .btn-gallery {
         margin: 1rem auto;
-        background-color: transparent;
+        background-color: white;
         border-style: none;
         cursor: pointer;
         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
