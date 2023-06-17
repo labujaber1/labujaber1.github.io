@@ -1,0 +1,674 @@
+/* use with Main and home html */
+/*global start with '*' */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    color-scheme: normal;
+    font-size: clamp(0.8rem, 1dvw, 1.25rem);
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 1.5;
+}
+
+ /* font styling */
+h1 {
+    text-align: center;
+    font-size: calc(1rem + 0.290625dvw);
+}
+h3 {
+    background: linear-gradient(to right,green,rgb(2, 203, 103));
+    font-size: calc(1.6rem + 0.290625dvw);
+    font-family: Arial;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#p6 {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
+/*at https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/*/
+/*in and out text shadow grey back*/
+#p7 {
+    margin: 0;
+    padding: 0;
+    background-color: #666666;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+
+}
+/*in and out text shadow white back*/
+#p8 {
+    margin: 0;
+    padding: 0;
+    background-color: #666666;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+
+/*general link styles for all pages*/
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+}
+    li {
+        text-align: center;
+        flex: 3;
+    }
+/*class for font awesome icons*/
+.user {
+    flex:1;
+}
+a {
+    display:inline-block;
+    width:fit-content;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: calc(0.9em + 0.290625dvw);
+}
+/*font awesome icons*/
+i {
+    width: 20px;
+    color: orange;
+    transform: scale(2);
+    margin: 4px;
+}
+
+/* highlight active links on hover */
+li a:hover:not(.active) {
+    transition: all 500ms ease-in-out;
+    transform: scale(1.03);
+    color:white;
+}
+li i:hover:not(.active) {   
+    transform: scale(2.03);
+    transition: all 500ms ease-in-out;
+    color:white;
+}
+
+/* global return */
+#scrollToTopButton {
+    position: fixed;      
+} 
+
+/* css animation element fade in courtesy of 
+https://alvarotrigo.com/blog/css-animations-scroll/*/
+.reveal {
+    position: relative;
+    opacity: 0;
+    }
+    .reveal.active {
+        opacity: 1;
+    }
+    .active.fade-bottom {
+        animation: fade-bottom 1s linear;
+    }
+    .active.fade-left {
+        animation: fade-left 1s ease-in-out;
+    }
+    .active.fade-right {
+        animation: fade-right 1s ease-in-out;
+    }
+    .active.fade-in {
+        animation: fade-in 1s ease-in-out;
+    }
+    .active.img-animate {
+        animation: img-animate 3s ease-in-out;
+    }
+    @keyframes img-animate {
+        0% {
+            transform: scale(1.0) rotate(-2deg);
+            opacity: 0;
+        }
+        100% {
+            
+            opacity: 1.0;
+        }
+    }
+    @keyframes fade-bottom {
+        0% {
+        transform: translateY(50px);
+        opacity: 0;
+        }
+        100% {
+        transform: translateY(0);
+        opacity: 1;
+        }
+    }
+    @keyframes fade-left {
+        0% {
+        transform: translateX(-100px);
+        opacity: 0;
+        }
+        100% {
+        transform: translateX(0);
+        opacity: 1;
+        }
+    }
+    @keyframes fade-right {
+        0% {
+        transform: translateX(100px);
+        opacity: 0;
+        }
+        100% {
+        transform: translateX(0);
+        opacity: 1;
+        }
+    }
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+/* general elements for re-use over any page */
+img {
+    max-width: 100%;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* general element wrapper */ 
+.wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+}
+/* general text box container */ 
+.textBox {
+    text-align: center;
+    padding: 10px 20px;
+}
+/* used for intro on home */
+.textBox--Left {
+    text-align: left;
+    padding: 10px 20px;
+    margin: 30px 30px;
+}
+/* divider at end of each degree project with different content */
+/* can't use ::before or ::after as col1 used elsewhere 
+and different content in each */  
+.textBox--Divider {
+    width:  100%;;
+    text-align: center;
+    padding: 0 0 5px 0;
+    margin-bottom: 20px;
+    color:rgb(238, 10, 10);
+    background-color: #ff0606;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+/* name on home nav */
+.italText{
+    font-style: italic;
+}
+/* for each project title */
+.title {
+    width: 100%;
+    height: fit-content;
+    font-size: calc(1.5rem + 0.290625dvw);
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+ 
+/* ####### */
+/* repeated base elements for each page */
+.pageTitle {
+    width: 100%;
+    height: fit-content;
+    font-size: calc(2.5rem + 0.290625dvw);
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+}
+    .pageTitle p {
+        margin: 0;
+        padding: 0;
+        background-color: #666666;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    }
+.nav {
+    background-color: rgb(46,117,182);
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    transition: all 1s;
+}
+
+    .nav p {
+        color: white;
+    }
+    .stickyColourChange1 {
+        background-color: rgb(37,123,147);
+
+    }
+    .stickyColourChange2 {
+        background-color: rgb(28,129,115);
+    }
+    .stickyColourChange3 {
+        background-color: rgb(14, 168, 32);
+    }
+/* Only set at the bottom of cv */
+.footer {
+    background-color: rgb(99, 146, 248);
+    width: 100%;
+    margin-top: 20px;
+    min-height: 15dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: clamp(0.8rem, 0.9dvw, 1.25rem);
+    /*flex-direction: column;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* ####################################### */
+/* home page only */
+.header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    background-color: rgb(46,117,182); 
+}
+    .header img {
+        content: "";
+        max-width: 200px;
+        transform: scale(0.7);
+        transition: all 1s ease-in-out;
+        box-shadow: none;
+        border-radius: 50%;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    }
+    #img-pos {
+        flex-grow: 1;
+        padding-right: 10px;
+        
+    }
+    .header img:hover {
+        transform: scale(1.0) ;
+        box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.6);
+    }
+    
+/* used in home header for name */    
+#header-textBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: auto 0;
+    
+}
+    #header-textBox p {
+        font-weight: bolder;
+        font-size: calc(2.5rem + 0.290625dvw);
+        color: black;
+    }
+
+
+/* diff color */
+#home-footer {
+    background-color: rgb(38, 17, 17); 
+    width: 100%;
+    min-height: 15dvh;
+    font-size: clamp(0.8rem, 0.9dvw, 1.25rem);
+    margin: 10px 0 30px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+    #home-footer a {
+        color: white;
+    }
+/* in home page for future planned project */
+.work-in-progress {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(135, 163, 131, 0.959), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3px;
+    display: inline-block;
+    padding: 1rem;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+    .wip-image-container {
+        background-color: #84c4f8;
+        background-image: url("pics/stickynote.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        max-width: 100px;
+        height: auto;
+        padding: 20px 10px;
+        float: left;
+    }
+
+    .wip-text {
+        color: gray;
+        font-size: 16px;
+        font-family:'Edu SA Beginner',cursive;
+    }
+    
+/* cards in home page for skills etc */
+.card {
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgb(176, 176, 244);
+    margin: 2px;
+
+}
+.card-title {
+    min-width: 30%;
+    padding: 5px;
+    color: white;
+    font-style: oblique;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(67, 98, 155);
+    border-radius: 5px;
+}
+
+/* image cards */
+/*image cards that enlarge slightly on hover */
+.imageCase {
+    max-width: 360px;
+    height: auto;
+    padding: 0;
+    margin: auto;
+}
+.imageFrame {
+    max-width: 360px;
+    height: fit-content;
+    border: 2px solid rgb(233, 225, 225);
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 400ms ease-in-out;
+}
+    .imageFrame:hover {
+        filter: brightness(110%);
+        transform: scale(1.05);
+    }
+
+/* personal projects */
+.imageCase.pp {
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text-container {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 5px;
+    margin: 20px auto;
+    border-radius: 3px;
+    background-color:rgba(250, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    /* show and hide additional descriptive text */
+    .show-text {
+        display: block;
+    }
+    .hide-text {
+        display: none;
+    }
+    .toggle-icon {
+        cursor: pointer;
+    }
+    .fa-arrow-down,
+    .fa-arrow-up {
+        margin: 0 2px;
+        transition: transform 0.3s;
+        transform: scale(1);
+    }
+    /*.rotate180 {
+        transform: rotate(180deg);
+    }*/
+    
+
+/* col1 used in page 2 & 3 */
+.col1 {
+    width: 100%;
+    min-height: 20dvh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    padding: 0 10dvw ; 
+}
+/* box to contain links to zip file and github repos in degree projects*/
+.colSpacer {
+    width: 100%;
+    min-height: 6dvh;
+    margin: 1rem auto 3rem auto;
+    text-align: center;
+    align-items: center;
+    padding: 0 5px;
+    border-radius: 20px;
+}
+
+    .colSpacer.line {
+        border: 5px solid;
+        border-color: gold;
+    }
+    .colSpacer.linearGradient {    
+        border: 3px solid;
+        border-image-source: linear-gradient(145deg, gold,red,gold);
+        border-image-slice: 1;
+    }
+
+/*page3 specific styles*/
+.subtitle {
+    font-size: calc(1.125rem + 0.290625dvw);
+}
+/* racing game image display */
+.img-RacingGame { 
+    background-color:white;
+    width: fit-content;
+    margin: 10px auto 10px auto;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row; 
+    padding: 5px; 
+    justify-content: space-between;
+    align-items:first baseline;
+}
+    .img-RacingGame img {
+        padding: 5px;
+    }
+/* word guess game expanding gallery */
+.gallery-container {
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: row;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+      
+        .slide {
+            flex: 1;
+            overflow: hidden;
+            transition: 0.5s;
+            margin: 0 2%;
+            line-height: 0;   
+        }
+        
+        .slide > img {
+            width: 200%;
+            height: calc(100% - 10vh);
+            object-fit: cover; 
+            transition: 0.5s;
+            border-color: white;
+            border-style: solid;
+            border-width: 5px;
+        }
+        .slide > span {
+            font-size: calc(1rem + 0.290625dvw);
+            display: block;
+            text-align: center;
+            height: 40px;
+            padding-top: 20px;  
+        }
+        .slide:hover { flex: 1 1 50%; }
+        .slide:hover > img {
+            width: 100%;
+            height: 100%;
+        }
+      
+/* Responsive grid gallery container for django pics */
+.imgGridWrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1% 1%;
+    
+}
+    /* gallery */
+    .gallery {
+        display: none;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        transition: all 500ms ease-in-out;   
+    }
+    .imgGridWrap a:hover {
+        filter: brightness(90%) drop-shadow(5px 5px 5px gray);   
+    }
+    .btn-gallery {
+        margin: 1rem auto;
+        background-color: transparent;
+        border-style: none;
+        cursor: pointer;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        padding: 0.5rem;
+    }
+    .btn-gallery:hover {
+        box-shadow: 0 4px 8px 0 rgb(14, 168, 32, 0.6);
+        background-color: greenyellow;
+    }
+/* ############################## */
+/*page cv document display */
+    /* CV */
+.docContainer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+.docFrame {
+    background-color:rgb(233, 233, 247);
+    max-width: 800px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: yellow;
+    border-style: ridge;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: all 1.5s ease-in-out;  
+}
+    .docFrame a {
+        color: rgb(22, 11, 235);
+    }
+    .docFrame a:hover {
+        color: rgb(198, 147, 52);     
+    }  
+    
+.docContainer .text-container {
+    max-width: 800px;
+    margin: 5px auto;
+    text-align: center;
+}
+#PDFView1, #PDFView2 {
+    width: 100%;
+    height: 600px;
+    padding: 2px;
+    display: none;
+    align-items: center;
+}    
+    /* enlarges doc on click see js */
+    /*.docEnlarge {
+        transform: scale(1.3);
+        transform-origin: top;
+        z-index: 99999;    
+    } */
+
+/* used in cv links and button click */
+    .itemRowSpace { 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    }
+
+/* #### media queries #### */
+@media (width >= 1000px) { 
+    .wrapper {padding: 0 10% 2rem 10%; }
+    
+    }
+@media ( width >= 600px) and (width < 1000px) { 
+    .img-RacingGame { flex-direction: column; align-items: center; }
+    .gallery-container { flex-direction: column; }
+}
+@media (width < 600px) { 
+    .img-RacingGame { flex-direction: column; align-items: center; }
+    .col1 { padding: 0; }
+    .gallery-container { flex-direction: column; }
+    .header img:hover { margin: 0;}
+    
+}
+
+@media (prefers-reduced-motion) {
+    html {
+      scroll-behavior: none;
+    }
+  }
+
+  
