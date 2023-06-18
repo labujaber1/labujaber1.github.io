@@ -402,9 +402,7 @@ and different content in each */
     color: white;
     font-style: oblique;
     display: flex;
-    flex-wrap: wrap;
     font-weight: bold;
-    text-overflow: ellipsis;
     align-items: center;
     justify-content: center;
     background-color: rgb(67, 98, 155);
@@ -530,7 +528,7 @@ and different content in each */
     padding: 4% 2%;
     box-sizing: border-box;
     height: fit-content;
-    box-shadow: var(--box-shadow);
+    /*box-shadow: var(--box-shadow);*/
 }
       
         .slide {
