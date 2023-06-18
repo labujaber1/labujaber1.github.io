@@ -5,7 +5,6 @@
     --box-shadow-green: 0 4px 8px 0 rgba(135, 163, 131, 0.959), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     --box-shadow-red: 0 4px 8px 0 rgb(248, 143, 143), 0 6px 20px 0 rgba(248, 143, 143, 0.19);
     --box-shadow-purple: 0 4px 8px 0 rgb(176, 176, 244);
-    
 }
 /*global start with '*' */
 * {
@@ -305,12 +304,12 @@ and different content in each */
     width: 100%;
     height: auto;
     display: flex;
-    padding: 10px;
+    flex-wrap: nowrap;
     background-color: rgb(46,117,182); 
 }
     .header img {
         content: "";
-        max-width: 200px;
+        min-width: 80px;
         transform: scale(0.7);
         transition: all 1s ease-in-out;
         border-radius: 50%;
@@ -318,11 +317,11 @@ and different content in each */
     }
     #img-pos {
         flex-grow: 1;
-        padding-right: 10px;
-        
+        padding: 10px 0;
+        overflow: hidden;
     }
     .header img:hover {
-        transform: scale(1.0) ;
+        transform: scale(0.8) ;
         box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.6);
     }
     
@@ -334,11 +333,11 @@ and different content in each */
     flex-direction: column;
     flex-grow: 1;
     margin: auto 0;
-    
+    padding: 10px 10px;
 }
     #header-textBox p {
         font-weight: bolder;
-        font-size: calc(2.5rem + 0.290625dvw);
+        font-size: calc(2rem + 0.35dvw);
         color: black;
     }
 
@@ -669,7 +668,7 @@ and different content in each */
     .img-RacingGame { flex-direction: column; align-items: center; }
     .col1 { padding: 0; }
     .gallery-container { flex-direction: column; }
-    .header img:hover { margin: 0;}
+    .header img:hover { transform: scale(0.7);}
     
 }
 
