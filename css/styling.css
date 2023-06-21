@@ -3,23 +3,22 @@
    Description: Portfolio site to show current projects
 
    Contents:
-    1. GLOBAL SETTINGS (24)
-    2. TYPOGRAPHY (53)
-    3. LAYOUT - MAIN COMPONENTS (150)
-    4. LAYOUT - GENERAL REUSABLE COMPONENTS (211)
-    4.1 GENERAL CONTAINERS (215)
-    4.2 TEXT CONTAINERS (258)
-    4.3 IMAGE CONTAINERS (330)
-    5. LANDING PAGE COMPONENTS (369)
-    6. PERSONAL PROJECTS (PP) COMPONENTS (460)
-    7. CV COMPONENTS (553)
-    8. UTILITIES (607)
-    9. BUTTONS (630)
-    10. ANIMATIONS (660)
-    11. MEDIA QUERIES (733)
+    1. GLOBAL SETTINGS (23)
+    2. TYPOGRAPHY (56)
+    3. LAYOUT - MAIN COMPONENTS (153)
+    4. LAYOUT - GENERAL REUSABLE COMPONENTS (214)
+    4.1 GENERAL CONTAINERS (218)
+    4.2 TEXT CONTAINERS (261)
+    4.3 IMAGE CONTAINERS (333)
+    5. LANDING PAGE COMPONENTS (372)
+    6. PERSONAL PROJECTS (PP) COMPONENTS (463)
+    7. CV COMPONENTS (556)
+    8. UTILITIES (610)
+    9. BUTTONS (633)
+    10. ANIMATIONS (663)
+    11. MEDIA QUERIES (736)
     # Note - line numbers are approx.
 */
-
 /* ==================
 * 1. GLOBAL SETTINGS
 ===================== */
@@ -39,7 +38,7 @@
     scroll-behavior: smooth;
 }
 :focus {
-    outline: 2px solid rgb(255, 115, 0);
+    outline: 0.2px solid rgb(255, 115, 0);
     border-radius: 6px;
     box-shadow: var(--focus-colour);
 }
