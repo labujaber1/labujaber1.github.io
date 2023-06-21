@@ -31,18 +31,22 @@
     --box-shadow-red: 0 4px 8px 0 rgb(248, 143, 143), 0 6px 20px 0 rgba(248, 143, 143, 0.19);
     --box-shadow-purple: 0 4px 8px 0 rgb(176, 176, 244);
     --char-multiplier: 0.29dvw;
+    --focus-colour: 0 0 2px 6px orange;
 }
 * {
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+:focus {
+    outline: 2px solid rgb(255, 115, 0);
+    border-radius: 6px;
+    box-shadow: var(--focus-colour);
+}
 html {
     color-scheme: normal;
     font-size: clamp(0.8rem, 1dvw, 1.25rem);
-}
-
+} 
 body {
     font-family: 'Libre Franklin', sans-serif;
     line-height: 1.5;
