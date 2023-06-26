@@ -25,6 +25,7 @@
 /* use with Main and home html */
 :root {
     --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --box-shadow-hover: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
     --box-shadow-white: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
     --box-shadow-green: 0 4px 8px 0 rgba(135, 163, 131, 0.959), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     --box-shadow-red: 0 4px 8px 0 rgb(248, 143, 143), 0 6px 20px 0 rgba(248, 143, 143, 0.19);
@@ -337,28 +338,30 @@ and different content in each */
 img {
     max-width: 100%;
     display: block;
+    margin: auto;
     box-shadow: var(--box-shadow);
 }
 
 /*image cards that enlarge slightly on hover */
 .imageCase {
     max-width: 360px;
-    height: auto;
-    padding: 0;
     margin: auto;
 }
 .imageFrame {
+    display: flex;
     max-width: 360px;
-    height: fit-content;
-    border: 2px solid rgb(233, 225, 225);
+    min-height: 260px;
+    align-items: center;
+    justify-content: center;
     border-radius: 3px;
     box-shadow: var(--box-shadow);
     transition: all 400ms ease-in-out;
-    background-color: whitesmoke;
+    background-color: transparent;
 }
     .imageFrame:hover {
         filter: brightness(110%);
-        transform: scale(1.05);
+        transform: scale(1.04);
+        box-shadow: var(--box-shadow-hover);
     }
 
 /* personal projects */
@@ -730,7 +733,6 @@ h ttps://alvarotrigo.com/blog/css-animations-scroll/*/
         transform-origin: top;
         z-index: 99999;    
     } */
-
 
 /* ##################
 * 11. MEDIA QUERIES
