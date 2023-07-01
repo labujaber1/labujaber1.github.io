@@ -61,6 +61,7 @@ h1 {
     text-align: center;
     font-size: calc(1rem + var(--char-multiplier));
 }
+/* h2 default, no additional styling */
 h3 {
     background: linear-gradient(to right,green,rgb(2, 203, 103));
     font-size: calc(1.6rem + var(--char-multiplier));
@@ -76,30 +77,7 @@ p {
     margin: 0;
     padding: 0;
     color: black;
-    font-style: normal;
-    font-weight: bold;
-}
-/*at https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/*/
-/*in and out text shadow grey back*/
-#p7 {
-    margin: 0;
-    padding: 0;
-    background-color: #666666;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-
-}
-/*in and out text shadow white back*/
-#p8 {
-    margin: 0;
-    padding: 0;
-    background-color: #666666;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    font-weight: 400;
 }
 
 /*general link styles for all pages*/
@@ -163,7 +141,6 @@ li i:hover:not(.active) {
     text-align: left;
     padding-left: 20px;
 }
-
     .pageTitle p {
         margin: 0;
         padding: 0;
@@ -278,18 +255,18 @@ li i:hover:not(.active) {
 /* can't use ::before or ::after as col1 used elsewhere 
 and different content in each */  
 .textBox--Divider {
-    width:  100%;;
+    width: 100%;
     text-align: center;
     padding: 0 0 5px 0;
     margin-bottom: 20px;
-    background-color: #ff0606;
+    background-color: #ff6a06;
     text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
 }
     .textBox--Divider p {
         color:rgb(238, 10, 10);
     }
 .text-container {
-    width: 100%;
+    max-width: 600px;
     height: auto;
     text-align: justify;
     padding: 0.25rem;
@@ -297,6 +274,9 @@ and different content in each */
     border-radius: 3px;
     background-color: transparent;
 }
+    .text-container.dp {
+        max-width: 100%;
+    }
 
 /* for each project title */
 .title {
@@ -304,7 +284,7 @@ and different content in each */
     height: fit-content;
     font-size: calc(1.5rem + var(--char-multiplier));
     color: white;
-    text-align: center;
+    text-align: left;
     margin: auto;
 }
 
