@@ -54,8 +54,8 @@ window.addEventListener("scroll", reveal);
 
 /* insert pdf document cv */
 window.onload = function() {
-  PDFObject.embed("CV/LawrenceAbuJaberCV_singlepage.pdf","#PDFView1");
-  PDFObject.embed("CV/LawrenceAbuJaberCV_employHistory.pdf","#PDFView2");
+  PDFObject.embed("CV/LawrenceAbuJaberCV1.pdf","#PDFView1");
+  PDFObject.embed("CV/LawrenceAbuJaberCV2.pdf","#PDFView2");
 }
 
 /* low priority data - hide/show employment history if required */
