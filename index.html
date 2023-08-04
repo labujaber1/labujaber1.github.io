@@ -128,7 +128,7 @@
         </div> 
     </div>
 
-    <div class="work-in-progress">
+    <!--<div class="work-in-progress">
         <div class="wip-image-container"> 
             <div class="wip-text" > Work in progress</div>
         </div>
@@ -138,7 +138,7 @@
                 The interface will be designed closely with the client as will the required methods of output.
                 A live test date is anticipated in September. 
             </p>
-    </div>
+    </div>-->
     <div class="wrapper">
         <div class="card">   
             <div class="card-title">
@@ -179,11 +179,19 @@
      
     <!-- 1st project getting text from file -->
     <div class="wrapper background-light">
-        <div class="col1">         
+        <div class="col1">    
             <div class="text-container">
-                <p> The source code can be accessed from<a href="https://github.com/labujaber1/LitRevResourceMVP">
-                    <em>github</em></a>or download the application<a href="LitRevResource/PublishLitrevresourceMVP.zip"><em>zip</em></a>file.</p>
-                <p> The purpose of this tool is to provide a single place for a student to record resources 
+                <p> The tool is written in C# using .NET Core 3.1 framework and windows form. The database used is SQL express 
+                    with data transferred using a mixture of stored procedures and directly written sql commands. 
+                    The overall design follows the MVP design principles. The tool is conceived from a personal need 
+                    and has been live tested, debugged, and used during the last half of a computer science degree. </p>
+                    <p> The source code can be accessed from<a href="https://github.com/labujaber1/LitRevResourceMVP">
+                        <em>github</em></a>or download the application<a href="LitRevResource/PublishLitrevresourceMVP.zip"><em>zip</em></a>file.</p>
+                    
+                </div>     
+            <div class="text-container">
+                
+                    <p> The purpose of this tool is to provide a single place for a student to record resources 
                     collected for an academic piece of writing.   
                     <span class="toggle-icon" onclick="toggleText(this)">
                         <i class="fa fa-arrow-down"></i>
@@ -274,12 +282,6 @@
             <div class="imageCase pp reveal fade-bottom" >
                 <img src="pics/LitRevAddEditResource.jpg" alt="Edit resource image" >
             </div>
-            <div class="text-container">
-                <p> The tool is written in C# using .NET windows form framework. The database used is SQL express 
-                    with data transferred using a mixture of stored procedures and directly written sql commands. 
-                    The overall design follows the MVP design principles. The tool is conceived from a personal need 
-                    and has been live tested, debugged, and used during the last half of a computer science degree. </p>
-            </div>
         </div>
     </div>
     <a name="TopPP2"></a>
@@ -294,6 +296,10 @@
 <div class="wrapper">
     <div class="col1">
         <div class="text-container">
+            <p> The tool has been written in C# and uses the .NET Core 3.1 windows form framework. Each form is fully decoupled 
+                allowing for each method to be extracted and used separately elsewhere by any learner. The telnet 
+                connection is in a separate class and called in the telnet and Tftp forms. The front end design was chosen
+                as effective means of displaying separate forms in a single display thus reducing screen space. </p>
             <p> The source code can be accessed from<a href="https://github.com/labujaber1/NWConfigScriptor">
                 <em>github</em></a>or download the application<a href="NWConfigScriptor/PublishConfig.zip"><em>zip</em></a>file.</p>
             <p> This tool has been developed from a need to reduce the repetitive typing of learned network commands 
@@ -357,14 +363,12 @@
                 <p class="show-text hide-text">
                 Using a telnet connection and a server (TFTPD64 included) 'copy running-config' commands are sent to a device. 
                 Retrieved configuration files can be selected and displayed for viewing or editing for advanced learners. 
-                The running-config files are chosen, rather than a startup-config file, to minimise the effect of 
-                configuration errors when restoring to a device.</p>
+                The running-config files are chosen, rather than a startup-config file, to test first and minimise the effect of 
+                configuration errors when restoring to a device.
+                The tool was eventually submitted as a final project, humbly scoring a 79, even though this was not its original intent.
+                </p>
             </p>
             <div class="imageCase pp" ><img src="pics/NWTFTPScreen.jpg" alt="TFTP image" ></div>
-            <p> The tool has been written in C# and used the .NET windows forms framework. Each form is fully decoupled 
-                allowing for each method to be extracted and used separately elsewhere by any learner. The telnet 
-                connection is in a separate class and called in the telnet and Tftp forms. The front end design was chosen
-                as effective means of displaying separate forms in a single display thus reducing screen space. </p>
             
         </div>
        
