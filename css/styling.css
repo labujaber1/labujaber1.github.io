@@ -34,7 +34,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
 }
 html {
     color-scheme: normal;
@@ -655,8 +655,8 @@ Added for mobile viewing as light-box is not effective */
 * 9. BUTTONS
 -============== */
 /* Return to top of section anchor */
-#scrollToTopButton {
-    position: fixed;      
+.scrollToTopButton {
+    position: relative;      
 } 
 
 .btn-gallery {
