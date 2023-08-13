@@ -1,4 +1,3 @@
-// Notes - var pre 2015, let/const after 2015
 
 // FUNCTIONS 
 /* Changes nav bar background colour to different colour when sticky css implemented */
@@ -22,17 +21,6 @@ window.addEventListener("scroll", () => {
       navColour.classList.remove("stickyColourChange1","stickyColourChange2","stickyColourChange3");
     }
 })
-
-/* Enlarge document frame on click */
-// Calls css class to scale up 
-/*const docX = document.querySelector(".docFrame");
-docX.addEventListener("click", () => {
-    if (docX.classList.contains("docEnlarge")) { 
-        docX.classList.remove("docEnlarge");
-    } else {
-        docX.classList.add("docEnlarge");
-    }
-})*/
 
 /*courtesy of https://alvarotrigo.com/blog/css-animations-scroll/*/
 /* fade in image effect from left, right and bottom */
