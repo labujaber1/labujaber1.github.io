@@ -1,5 +1,5 @@
 {
-    "cSpell.words": [
-        "stickynote"
-    ]
+  "cSpell.words": ["stickynote"],
+  "editor.inlineSuggest.showToolbar": "onHover",
+  "liveServer.settings.port": 5501
 }

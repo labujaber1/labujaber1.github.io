@@ -322,14 +322,22 @@ img {
 /*image cards */
 .imageCase {
     max-width: 360px;
+    max-height: auto;
     margin: auto;
     padding: 1rem;
     
 }
+.imageFrameContainer {
+    max-width: auto;
+    max-height: 360px;
+    padding:3px;
+    border: 1px double #302f2f ;
+}
 .imageFrame {
     max-width: var(--imageFrame-width);
-    min-height: 220px;
+    max-height: 260px;
     position: relative;
+    padding: 2px;
     transition: all 400ms ease-in-out;
     background-color: rgb(116, 18, 18);
     border-radius: 5px;
@@ -402,10 +410,13 @@ img {
 /* home page only */
 .header {
     width: 100%;
-    height: auto;
+    height: 55dvh;
     display: flex;
     flex-wrap: nowrap;
-    background-color: rgb(46,117,182); 
+    background-image: url(/pics/Banner-lapimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: rgb(46,117,182);*/ 
 }
     .header img {
         content: "";
@@ -437,7 +448,7 @@ img {
 }
     #header-textBox p {
         font-weight: bolder;
-        font-size: calc(2rem + 0.35dvw);
+        font-size: calc(2.5rem + 0.65dvw);
         color: black;
     }
 
