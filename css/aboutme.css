@@ -48,29 +48,29 @@
         0 0 8px 3px rgba(245, 245, 245, 0.847);
 }
 .shadow-red-glow:hover {
-        box-shadow: 
-            0 0 3px 0 rgb(104, 103, 103),
-            0 0 8px 3px rgba(250, 15, 15, 0.707)
+    box-shadow: 
+        0 0 3px 0 rgb(104, 103, 103),
+        0 0 8px 3px rgba(250, 15, 15, 0.707)
 }
 .shadow-green-glow:hover {
-        box-shadow: 
-            0 0 3px 0 rgb(104, 103, 103),
-            0 0 8px 3px rgba(15, 250, 105, 0.707)
+    box-shadow: 
+        0 0 3px 0 rgb(104, 103, 103),
+        0 0 8px 3px rgba(15, 250, 105, 0.707)
 }
 .shadow-purple-glow:hover {
-        box-shadow: 
-            0 0 3px 0 rgb(136, 135, 135),
-            0 0 8px 3px rgb(122, 22, 254)
+    box-shadow: 
+        0 0 3px 0 rgb(136, 135, 135),
+        0 0 8px 3px rgb(122, 22, 254)
 }
 .shadow-blue-glow:hover {
-        box-shadow: 
-            0 0 3px 0 rgb(130, 128, 128),
-            0 0 8px 3px rgb(15, 62, 250)
+    box-shadow: 
+        0 0 3px 0 rgb(130, 128, 128),
+        0 0 8px 3px rgb(15, 62, 250)
 }
 .shadow-orange-glow:hover {
-        box-shadow: 
-            0 0 3px 0 rgb(104, 103, 103),
-            0 0 8px 3px rgba(250, 164, 15, 0.707)
+    box-shadow: 
+        0 0 3px 0 rgb(104, 103, 103),
+        0 0 8px 3px rgba(250, 164, 15, 0.707)
 }
 .shadow-yellow-glow:hover {
     box-shadow: 
