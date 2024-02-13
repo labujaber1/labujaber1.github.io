@@ -10,13 +10,13 @@
     4.1 GENERAL CONTAINERS (189)
     4.2 TEXT CONTAINERS (235)
     4.3 IMAGE CONTAINERS (310)
-    5. LANDING PAGE COMPONENTS (400)
-    6. PERSONAL PROJECTS (PP) COMPONENTS (490)
-    7. CV COMPONENTS (582)
-    8. UTILITIES (635)
-    9. BUTTONS (655)
-    10. ANIMATIONS (680)
-    11. MEDIA QUERIES (756)
+    5. LANDING PAGE COMPONENTS (409)
+    6. PERSONAL PROJECTS (PP) COMPONENTS (499)
+    7. CV COMPONENTS (591)
+    8. UTILITIES (644)
+    9. BUTTONS (664)
+    10. ANIMATIONS (689)
+    11. MEDIA QUERIES (765)
     # Note - line numbers are approx.
 */
 /* ==================
@@ -25,16 +25,16 @@
 /* use with Main and home html */
 :root {
     --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    --char-multiplier: 0.29dvw;
+    --char-multiplier: 0.39dvw;
     --focus-colour: 0 0 1px 2px rgb(234, 174, 61);
     --background-light: rgb(237, 241, 247);
     --background-main: rgb(250,250,250);
-    --imageFrame-width: 360px;
+
 }
 * {
     margin: 0;
     box-sizing: border-box;
-    /*scroll-behavior: smooth;*/
+    
 }
 html {
     color-scheme: normal;
@@ -103,7 +103,7 @@ i {
     width: 20px;
     color: rgb(234, 174, 61);
     transform: scale(2);
-    margin: 4px;
+    margin: 0.5rem;
 }
 
 /* highlight active links on hover */
@@ -173,7 +173,7 @@ li i:hover:not(.active) {
 .footer {
     background-color: rgb(99, 146, 248);
     width: 100%;
-    margin-top: 20px;
+    padding-top: 1rem;
     min-height: 15dvh;
     display: flex;
     flex-direction: row;
@@ -188,13 +188,16 @@ li i:hover:not(.active) {
 /* =========================
 * 4.1 GENERAL CONTAINERS
 ========================== */ 
-.wrapper {
+.wrapper,
+.wrapper2 {
     width: 100%;
-    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding: 2rem;
+}
+.wrapper {
+    margin-bottom: 20px;
 }
 .background-light {
     background-color: var(--background-light);
@@ -220,7 +223,6 @@ li i:hover:not(.active) {
     padding: 0 5px;
     border-radius: 20px;
 }
-
     .colSpacer.line {
         border: 5px solid;
         border-color: gold;
@@ -320,22 +322,23 @@ img {
 }
 
 /*image cards */
+/* contains laptop and text */
 .imageCase {
     max-width: 360px;
-    max-height: auto;
+    height: 100%;
     margin: auto;
     padding: 1rem;
-    
 }
+/* contains laptop components */
 .imageFrameContainer {
-    max-width: auto;
-    max-height: 360px;
-    padding:3px;
-    border: 1px double #302f2f ;
+    width: 100%;
+    height: 100%;
+    padding: 3px;
 }
+/* start building laptop components */
 .imageFrame {
-    max-width: var(--imageFrame-width);
-    max-height: 260px;
+    width: 100%;
+    height: 100%;
     position: relative;
     padding: 2px;
     transition: all 400ms ease-in-out;
@@ -360,7 +363,7 @@ img {
         box-shadow: inset 0 1px 2px 0 gray;
     }
     .imageFrame-bottom {
-        max-width: var(--imageFrame-width);
+        max-width: 100%;
         height: 17px;
         background-color: rgb(145, 145, 145);
         border-radius: 0 0 30px 30px;
@@ -393,8 +396,8 @@ img {
     }
     
     .imageFrame img {
-        width: 310px;
-        height: 190px;
+        width: max-content;
+        height: auto;
         border-radius: 0 0 0 0;
     }
 /* personal projects */

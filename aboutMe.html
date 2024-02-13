@@ -16,8 +16,8 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Links for bootstrap css (js at bottom of page)-->
@@ -27,218 +27,333 @@
 <body>
     
     <!-- CV content copied to json file and read to bootstrap5 and custom styled css components-->
-    <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-md-3">
-            
-            <div class="col text-center">  
+    <div class="container-fluid  bg-dark bg-gradient">
+        <div class="row row-cols-1 row-cols-md-3 pt-4">  
+            <div class="col text-center">      
                 <!-- vertical nav bar with links to sections or fixed details that would
                 not change ie mobile number, address, links to linkedin etc, -->
-                <nav class="navbar navbar-expand-xxl py-3 ">
-                    <div class="container-fluid py-3 rounded-3 shadow-lg">
+                <nav class="navbar navbar-expand-xl mt-2 ">
+                    <div class="container-fluid py-3 rounded-3 bg-white shadow-light">
                         <a href="" class="navbar-brand mx-0">
-                            <img src="../pics/header-img.jpg" class="w-50 rounded-circle mx-0">
+    
+                            <img src="../pics/header-img.jpg" class="w-50 img-thumbnail rounded-circle mx-0 shadow-sm border border-2 border-primary ">
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                        
+                        <button class="navbar-toggler  shadow-inset" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon "></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav flex-column mx-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="">Github</a>
+                                    <a class="nav-link active" href="https://github.com/labujaber1" target="_blank">Github</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="https://uk.linkedin.com/in/lawrence-abu-jaber" target="_blank">LinkedIn</a>
                                 </li>
                                 <!-- toggle hide show rather than load separate html page-->
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">07733630299 </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Wisbech, Cambridgeshire</a>
+                                    <a class="nav-link" href="https://en.wikipedia.org/wiki/Wisbech" target="_blank">Wisbech, Cambridgeshire</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">LinkedIn</a>
+                                    <a class="nav-link" href="mailto:lawrenceabujaber@gmail.com" target="_blank">lawrenceabujaber@gmail.com</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
 
-                <div class="container bg-success-subtle flex-column">
-                    <ul class=" ">
-                        <li class="">
-                            <a class="" href="../index.html">BACK TO MAIN</a>
+                <!--<div class="container rounded-3 flex-column my-4 bg-white shadow-blue-glow">
+                    <ul class="nav nav-pills flex-column mx-auto bg-white">
+                        <li class="nav-item shadow-sm m-4">
+                            <a class="nav-link text-uppercase" href="../index.html">BACK TO MAIN</a>
                         </li>
-                        <li class="">
-                            <a class="" href="#">Introduction</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" data-bs-toggle="collapse" data-bs-target="#aboutme" role="button" aria-expanded="true" aria-controls="aboutme" data-bs-parent="#contentContainer">Introduction</a>
                         </li>
-                        <li class="">
-                            <a class="" href="#">Work experience</a>
+                        <li class="nav-item shadow-sm m-4">
+                            <a class="nav-link text-uppercase" data-bs-toggle="collapse" data-bs-target="#wkexp" role="button" aria-expanded="false" aria-controls="wkexp" data-bs-parent="#contentContainer">Work experience</a>
                         </li>
-                        <li class="">
-                            <a class="" href="#">Education</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" data-bs-toggle="collapse" data-bs-target="#education" role="button" aria-expanded="false" aria-controls="education" data-bs-parent="#contentContainer">Education</a>
                         </li>
-                        <li class="">
-                            <a class="" href="#">Work history </a>
+                        <li class="nav-item shadow-sm m-4">
+                            <a class="nav-link text-uppercase" data-bs-toggle="collapse" data-bs-target="#work_history" role="button" aria-expanded="false" aria-controls="work_history" data-bs-parent="#contentContainer">Work history </a>
                         </li>
                         
                     </ul>
-                </div>
-                
+                </div>-->
+
+                <div class="container rounded-3 flex-column mt-3 bg-white shadow-blue-glow">
+                    <ul class="nav nav-pills flex-column mx-auto bg-white">
+                      <li class="nav-item shadow-sm m-4">
+                        <a class="nav-link text-uppercase" href="../index.html">BACK TO MAIN</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="javascript:void(0);" onclick="toggleContent('aboutmeContent')">Introduction</a>
+                      </li>
+                      <li class="nav-item shadow-sm m-4">
+                        <a class="nav-link text-uppercase" href="javascript:void(0);" onclick="toggleContent('wkexpContent')">Work experience</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="javascript:void(0);" onclick="toggleContent('educationContent')">Education</a>
+                      </li>
+                      <li class="nav-item shadow-sm m-4">
+                        <a class="nav-link text-uppercase" href="javascript:void(0);" onclick="toggleContent('work_historyContent')">Work history</a>
+                      </li>
+                    </ul>
+                  </div>                
             </div>
                            
-            <div class="col col-md-8 bg-primary-subtle py-3">
+            <div class="col col-md-8  py-3">
+                <!--<div id="contentContainer">-->
                 <!-- View 100dvh content with no need to scroll. 
                     Different sections displayed to this page written to single page but 
-                hidden and showed on command  -->
-                <!-- Could have headline with show more on hover -->
-                <div id="aboutme" class="container border border-2 border-black p-3">
+                hidden and shown on command  -->
+                <div id="aboutmeContent" class="show collapse container border border-1 border-dark-subtle text-bg-dark p-3 rounded-3 shadow-orange-glow">
                     
-                    <div id="aboutme_heading" class="container border border-2 border-primary my-2">
-                        <h1>A little introduction to me..</h1>
-                    </div>
-                    <div id="aboutme_project" class="container-fluid border border-2 border-success my-2">
-                        <div id="aboutme_subheading" class="">
-                            <h4>something</h4>
+                    <div id="_heading" class="container text-capitalize">
+                        <h1>A little introduction..</h1>
+                    </div><br>
+                    <div id="aboutme_project" class="container-fluid">
+                        <div id="_subheading" class="">
+                            <h3>Hello,</h3>
                         </div>
 
-                        <div id="aboutme_subtitle" class="">
-                            <h6>something</h6>
+                        <div id="_subtitle" class="">
+                            <h5></h5>
                         </div>
-                        <div id="aboutme_paragraph" class="">
-                            <p>This is what I did and this is what it does</p>
+                        <div id="_paragraph" class="">
+                            <p>
+                                I am a dedicated computer science graduate making a career change from retail into software development. 
+                                Keen to learn and wanting to collaborate on front-end projects leading towards full stack capabilities.
+                            </p>
+                            <p>
+                                I have experience in developing tools in .NET aimed at students, including myself, to improve efficiency in assignment execution and 
+                                support network learning goals.
+                            </p>
+                            <p> 
+                                In another life I've led multiple retail teams, up to 15 members, and strategised 
+                                with mid and senior leaders to complete retail working goals within tight time and resource 
+                                constraints. 
+                            </p>
+                            <p>
+                                Ready and raring to go...
+                            </p>
+                        </div>
+                        <hr>
+                        <hr>
+                        <div id="_subtitle" class="">
+                            <h5><u>Skills and familiar software</u></h5>
+                        </div>
+                        <div id="_paragraph" class="">
+                            <p>Main Languages: C# (.NET Core), Java and Python.</p>
+                            <p>Web development: HTML, CSS, and JavaScript.</p>
+                            <p>Main databases: MySQL, SQL Express, and SQLite.</p>
+                            <p>Other: Git and Agile development (practiced in group projects).</p>
                         </div>
                     </div>
                 </div>
+                
 
-                <hr>
+                <div id="wkexpContent" class="collapse container border border-1 border-dark-subtle text-bg-dark p-3 rounded-3 shadow-green-glow">
 
-                <div id="wkexp" class="container border border-2 border-black p-3">
-
-                    <div id="wkexp_heading" class="container border border-2 border-primary my-2">
+                    <div id="_heading" class="container">
                         <h1>Work experience</h1>
                     </div>
-                    <div id="wkexp_usavehicleimports" class="container-fluid border border-2 border-success my-2">
-                        <div id="wkexp_subheading" class="">
-                            <h4>Project USA Vehicle Imports 2023</h4>
+                    <div id="wkexp_usavehicleimports" class="container-fluid text-bg-dark my-3">
+                        <div id="_subheading" class="">
+                            <h3>Project - Django website redesign 2023 </h3>
                         </div>
 
-                        <div id="wkexp_subtitle" class="">
-                            <h6>Project 1 - html,css,javascript</h6>
+                        <div id="_subtitle" class="">
+                            <h5>
+                                <a href="https://github.com/labujaber1/UsaVehicleImports-Django/blob/main/README.md" class="" target="_blank">@github.com</a>
+                            </h5>
                         </div>
-                        <div id="wkexp_paragraph" class="">
-                            <p>This is what I did and this is what it does</p>
-                        </div>
-
-                        <div id="wkexp_subtitle" class="">
-                            <h6>Project 2 - Django USA Vehicle Imports - set content</h6>
-                        </div>
-                        <div id="wkexp_paragraph" class="">
-                            <p>This is what I did and this is what it does</p>
-                        </div>
-
-                        <div id="wkexp_subtitle" class="">
-                            <h6>Project 3 - Django USA Vehicle Imports - CMS</h6>
-                        </div>
-                        <div id="wkexp_paragraph" class="">
-                            <p>This is what I did and this is what it does</p>
-                        </div>
-
+                        <div id="_paragraph" class="">
+                            <p>
+                                Redesigned an existing static business website to update its design and functionality 
+                                whilst learning Django. Added value by including separate current and past inventory 
+                                galleries, news blog, contact forms, FAQ section, testimonial sections, google maps, 
+                                social media functionality, and ratings/comment’s ability. Built in SQLite3 used for 
+                                the database, formspree.com used for email services, and honeypot application used 
+                                instead of reCAPTCHA.
+                            </p> 
+                            <p>
+                                Version 3.1 extends to include content management system functionality utilizing the 
+                                built in admin system. This provides a business advocate with the ability to change 
+                                almost all (approx98%) content including headers, titles, link titles and icons, 
+                                business data, and content. Original content used in the redesign with improvements to
+                                grammar, spelling, and image resolution. 
+                            </p>
+                        </div>          
                     </div>
-
-                    <div id="wkexp_NWConfigScriptor" class="container-fluid border border-2 border-success my-2">
-                        <div id="wkexp_heading" class="">
-                            <h4>Project NWConfigScriptor 2022-23</h4>
+                    <hr>
+                    <hr>
+                    <div id="wkexp_NWConfigScriptor" class="container-fluid text-bg-dark my-3">
+                        <div id="_subheading" class="">
+                            <h3>Project - Network Configuration Scriptor 2022-23</h3>
                         </div>
-                        <div id="wkexp_subtitle" class="">
-                            <h6>subtitle</h6>
+                        <div id="_subtitle" class="">
+                            <h5>
+                                <a href="https://github.com/labujaber1/NWConfigScriptor" class="" target="_blank">@github.com</a> 
+                            </h5>
                         </div>
-                        <div id="wkexp_paragraph" class="">
-                            <p>This is what I did and this is what it does</p>
-                        </div>
-                    </div>
-
-                    <div id="wkexp_LitRevResource" class="container-fluid border border-2 border-success my-2">
-                        <div id="wkexp_subheading" class="">
-                            <h4>Project LitRevResource 2022</h4>
-                        </div>
-                        <div id="wkexp_subtitle" class="">
-                            <h6>subtitle</h6>
-                        </div>
-                        <div id="wkexp_paragraph" class="">
-                            <p>This is what I did and this is what it does</p>
+                        <div id="_paragraph" class="">
+                            <p>
+                                Designed and implemented a C# .NET Core 3.1 desktop application to create network 
+                                configuration scripts as text files. They are used with Telnet & TFTP to update network device
+                                configuration files, and backup/restore configuration files on a directly connected 
+                                router and in GNS3. Split into 3 decoupled parts, with the first being able to be used
+                                with Packet Tracer. Used GITHUB within IDE for version control. Personally used 
+                                during the last year of a degree and presented for the final project.
+                            </p>
                         </div>
                     </div>
-
-                    
-                    
+                    <hr>
+                    <hr>
+                    <div id="wkexp_LitRevResource" class="container-fluid text-bg-dark my-3">
+                        <div id="_subheading" class="">
+                            <h3>Project - Literature Review Resource 2022</h3>
+                        </div>
+                        <div id="_subtitle" class="">
+                            <h5>
+                                <a href="https://github.com/labujaber1/LitRevResourceMVP/blob/master/README.md" class="" target="_blank">@github.com</a>
+                            </h5>
+                        </div>
+                        <div id="_paragraph" class="">
+                            <p>
+                                Conceptualised and constructed a C# .NET Core 3.1 desktop application to store and 
+                                organise module assignments and their respective resources. Includes sections such 
+                                as notes, references, search, and a link for each resource providing an increased 
+                                efficiency in assignment construction. Used SQL Express (setup script included) 
+                                with a section for connection string setup, based on MVP, uses singleton design, 
+                                and utilizes GITHUB for version control. Personally used during the last year of a 
+                                degree for module assignments and dissertation.
+                            </p>
+                        </div>
+                    </div>          
                 </div>
 
-                <hr>
 
-                <div id="education" class="container border border-2 border-black p-3">
-                    <div id="education_heading" class="container border border-2 border-primary my-2">
+                <div id="educationContent" class="collapse container border border-1 border-dark-subtle text-bg-dark p-3 rounded-3 shadow-yellow-glow">
+                    <div id="_heading" class="container">
                         <h1>Education</h1>
                     </div>
 
-                    <div id="education_ARU" class="container-fluid border border-2 border-success my-2">
-                        <div id="education_subheading" class="">
-                            <h4>Anglia Ruskin University</h4>
+                    <div id="education_ARU" class="container-fluid my-2">
+                        <div id="_subheading" class="">
+                            <h3>Anglia Ruskin University 2020-2023 @CWA Campus</h3>
                         </div>
-                        <div id="education_subtitle" class="">
-                            <h6>BSc (Hons) Applied Computer Science 2020-2023</h6>
+                        <div id="_subtitle" class="">
+                            <h5>BSc (Hons) Applied Computer Science </h5>
                         </div>
-                        <div id="education_paragraph" class="">
-                            <p>This is what I did and this is what it does</p>
-                        </div>
-                    </div>
-
-                    <div id="education_CWA" class="container-fluid border border-2 border-success my-2">
-                        <div id="education_subheading" class="">
-                            <h4>College of West Anglia</h4>
-                        </div>
-                        <div id="education_subtitle" class="">
-                            <h6>Applied Computer Science Level 3 2019-2020</h6>
-                        </div>
-                        <div id="education_paragraph" class="">
-                            <p>This is what I did and this is what it does</p>
+                        <div id="_paragraph" class="">
+                            <p>
+                                Awarded 1st Class Honours Degree with all assignments planned, executed, and submitted
+                                early with no re-submissions. Modules scored between 70% and 93%. 
+                            </p>
                         </div>
                     </div>
-
+                    <hr>
+                    <div id="education_CWA" class="container-fluid my-2">
+                        <div id="_subheading" class="">
+                            <h3>College of West Anglia 2019-2020</h3>
+                        </div>
+                        <div id="_subtitle" class="">
+                            <h5>Applied Computer Science Level 3 </h5>
+                        </div>
+                        <div id="_paragraph" class="">
+                            <p>Awarded Distinction. 1 merit and the rest distinctions.</p>
+                        </div>
+                    </div>
                 </div>
                 
-                <hr>
 
-                <div id="work_history" class="container border border-2 border-black p-3">
-                    <div id="work_history_heading" class="container border border-2 border-primary my-2">
+                <div id="work_historyContent" class="collapse container border border-1 border-dark-subtle text-bg-dark p-3 rounded-3 shadow-purple-glow">
+                    <div id="_heading" class="container">
                         <h1>Further work experience</h1>
                     </div>
-                    <div id="work_history_tesco" class="container-fluid border border-2 border-success my-2">
-                        <div id="tesco_subheading" class="">
-                            <h4>Tesco PLC 2004-2019</h4>
+                    <div id="work_history_tesco" class="container-fluid s my-2">
+                        <div id="_subheading" class="">
+                            <h3>Tesco PLC 2004-2019</h3>
                         </div>
-                        <div id="tesco_subtitle" class="">
-                            <h6>Teamleader 8yrs</h6>
+                        <div id="_subtitle" class="">
+                            <h5>TeamLeader 8yrs</h5>
                         </div>
-                        <div id="tesco_paragraph" class="">
-                            <p>This is what I did and this is what it does</p>
+                        <div id="_paragraph" class="">
+                            <p>     Team-Leader (nights) - Supported department managers by directing up to 15-member teams to meet a nightly 70% store filling split requirement.</p> 
+                            <p> •	Collaborated with 3 other team leaders to complete department objectives and reaffirm the continued value of the role to the business.</p>
+                            <p> •	Implemented staff training strategies and consistently achieved 100% team compliance with periodical service, health and hygiene, and fire safety company training.</p>      
+                            <p> •	Repeatedly analysed and re-sited fast-moving/promotional items to exceed sales beyond its location capacity and reduce warehouse stock holding by 15%.</p> 
+                            <p> •	Ensured staff rotas and payroll attendance reports were completed thoroughly and on-time to reduce colleague wage discrepancies by 15%.</p>
+                            <p> •	Instigated personal support to assist the warehouse member by taking in deliveries, delivering stock to and from filling teams, and prepare shop floor in time for day-trading.</p>
                         </div>
 
-                        <div id="tesco_subtitle" class="">
-                            <h6>General Assistant 7yrs</h6>
+                        <div id="_subtitle" class="">
+                            <h5>General Assistant 7yrs</h5>
                         </div>
-                        <div id="tesco_paragraph" class="">
-                            <p>This is what I did and this is what it does</p>
+                        <div id="_paragraph" class="">
+                            <p>
+                                GA (nights) – Replenish, present working area, and organise returns. Additionally coordinated 
+                                with the stock-control department to drive accurate item system levels for improved customer availability. 
+                            </p>
                         </div>
                     </div>
-                    
+                    <div class="btn btn-outline-info" data-bs-toggle="collapse" data-bs-target="#further_work_historyContent" aria-expanded="true" aria-controls="further_work_historyContent">
+                        More history..
+                    </div>
                 </div>
                 
-                <hr>
+                
+                <div id="further_work_historyContent" class="collapse container border border-1 border-dark-subtle text-bg-dark p-3 mt-2 rounded-3 shadow-purple-glow">
+                    <div id="_heading" class="container">
+                        <h1>Even more work experience</h1>
+                    </div>
+                    <div id="work_history_mccolls" class="container-fluid my-2">
+                        <div id="_subheading" class="">
+                            <h3>McColls Retail Group Plc 1996 - 2004</h3>
+                        </div>
+                        <div id="_subtitle" class="">
+                            <h5>IBM AS400 Computer Operator (3 years) Nov 2000–Jan 2004</h5>
+                        </div>
+                        <div id="_paragraph" class="">
+                            <p> •	Monitored AS400 System and Network Servers for messages and errors. </p>
+                            <p> •	Created and maintained user profiles on both AS400 System and Network server. </p>
+                            <p> •	Backed up and restored data on both systems. </p>
+                            <p> •	Responsible for communications between retail premises and head office and ensured data integrity. </p>
+                            <p> •	Ensured the completion of scheduled daily/weekly and periodical tasks. </p>
+                            <p> •	Provided a first line of support service for internal and external users on AS400 system and second line of support for Network users. </p>
+                            <p> •	Responsible for the maintenance of all AS400 linked hardware. </p>
+                        </div>
 
+                        <div id="_subtitle" class="">
+                            <h5>Systems Support Analyst (1½ years)	June 1999 – Nov 2000</h5>
+                        </div>
+                        <div id="_paragraph" class="">
+                            <p> •	Responsible for the maintenance of branch PCs and tills.</p>
+                            <p> •	Resolved software errors/issues for branch systems.</p>
+                            <p> •	Provided a first line of contact service for Head Office systems including AS400 users.</p>
+                            <p> •	Ensured the completion of all branch accounting on a weekly basis.</p>
+                            <p> •	Supported branches in all operational issues.</p>
+                            <p> •	Resolved branch telecommunication faults.</p>
+
+                            </p>
+                        </div>
+
+                        <div id="_subtitle" class="">
+                            <h5>Retail Coordinator/ Branch Manager Apr 1996 – June 1999</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-
         </div>
     </div>
-    <script src="js/indexjava.js"></script>
+
+    <script src="js/aboutme.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
 
