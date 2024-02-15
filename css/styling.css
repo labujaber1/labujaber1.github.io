@@ -396,8 +396,8 @@ img {
     }
     
     .imageFrame img {
-        width: max-content;
-        height: auto;
+        width: fit-content;
+        
         border-radius: 0 0 0 0;
     }
 /* personal projects */
