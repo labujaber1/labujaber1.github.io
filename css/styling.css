@@ -41,9 +41,10 @@ html {
     font-size: clamp(0.8rem, 1dvw, 1.25rem);
 } 
 body {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Nunito','Libre Franklin', sans-serif;
     line-height: 1.5;
     background-color: var(--background-main);
+    font-weight: 400;
 }
 
 /* ==================
