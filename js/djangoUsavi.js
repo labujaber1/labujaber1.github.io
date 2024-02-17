@@ -1,4 +1,4 @@
-/*
+
 document.addEventListener("click", function(event) {
     if (event.target.classList.contains("btn")) {
         if (event.target.innerHTML === "Show More..") {
@@ -7,5 +7,4 @@ document.addEventListener("click", function(event) {
             event.target.innerHTML = "Show More..";
         }
     }
-});
-*/
+},{passive: false});
