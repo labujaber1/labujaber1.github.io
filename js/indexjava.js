@@ -95,3 +95,10 @@ function toggleGallery(icon) {
 window.addEventListener("scroll", () => {
   console.log(window.scrollY);
 })
+
+/* click image in header for another animation */
+const elem = document.getElementById('img-pos');
+function imageFadeOut() {
+  elem.classList.toggle('click-fade-out')
+}
+elem.addEventListener('click', imageFadeOut);

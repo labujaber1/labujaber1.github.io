@@ -717,6 +717,7 @@ h ttps://alvarotrigo.com/blog/css-animations-scroll/*/
     .active.img-animate {
         animation: img-animate 3s ease-in-out;
     }
+    
     @keyframes img-animate {
         0% {
             transform: scale(1.0) rotate(-2deg);
@@ -765,7 +766,31 @@ h ttps://alvarotrigo.com/blog/css-animations-scroll/*/
             opacity: 1;
         }
     }
-
+    @keyframes fade-away {
+        0% {
+            opacity: 1;
+        }
+        40% {
+            transform: translateY(50px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-50px) rotateY(180deg);
+            opacity: 0;
+        }
+        /*100% {
+            animation: fade-in 2s ease forwards;
+        }*/ 
+    }
+    /* toggle between fades for fun*/
+    .fade-out {
+        cursor: pointer;
+        position: relative;
+        animation: fade-right 2s ease forwards;
+    }
+    .click-fade-out {
+        animation: fade-away 3s ease forwards;
+    }
 /* ##################
 * 11. MEDIA QUERIES
 ################## */
