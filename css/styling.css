@@ -38,7 +38,7 @@
 }
 html {
     color-scheme: normal;
-    font-size: clamp(0.8rem, 1dvw, 1.25rem);
+    font-size: clamp(1rem, 1.2dvw, 1.45rem);
 } 
 body {
     font-family: 'Nunito','Libre Franklin', sans-serif;
@@ -97,7 +97,7 @@ a {
     padding: 5px;
     text-decoration: none;
     text-align: center;
-    font-size: calc(0.9em + var(--char-multiplier));
+    font-size: calc(1em + var(--char-multiplier));
 }
 /*font awesome icons*/
 i {
@@ -197,9 +197,9 @@ li i:hover:not(.active) {
     align-items: center;
     padding: 2rem;
 }
-.wrapper {
+/*.wrapper {
     margin-bottom: 20px;
-}
+}*/
 .background-light {
     background-color: var(--background-light);
 }
