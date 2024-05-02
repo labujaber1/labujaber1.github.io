@@ -2,17 +2,18 @@
 // FUNCTIONS 
 /* Changes nav bar background colour to different colour when sticky css implemented */
 // action when nav scrolls towards top of screen using event listener
+// use for Single Page Application
 const navColour = document.querySelector(".nav");
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 1800 && window.scrollY < 6000 ) {
+    if (window.scrollY > 1500 && window.scrollY < 3000 ) {
       navColour.classList.remove("stickyColourChange1","stickyColourChange2","stickyColourChange3");
       navColour.classList.add("stickyColourChange1");
     }
-    else if (window.scrollY >= 6000 && window.scrollY < 10000) {
+    else if (window.scrollY >= 3000 && window.scrollY < 4500) {
       navColour.classList.remove("stickyColourChange1","stickyColourChange2","stickyColourChange3");
       navColour.classList.add("stickyColourChange2");
     }
-    else if (window.scrollY >= 10000) {
+    else if (window.scrollY >= 4500) {
       navColour.classList.remove("stickyColourChange1","stickyColourChange2","stickyColourChange3");
       navColour.classList.add("stickyColourChange3");
     } 
@@ -41,13 +42,13 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 /* insert pdf document cv */
-window.onload = function() {
+/*window.onload = function() {
   PDFObject.embed("CV/LawrenceAbuJaberCV1.pdf","#PDFView1");
   PDFObject.embed("CV/LawrenceAbuJaberCV2.pdf","#PDFView2");
-}
+}*/
 
 /* low priority data - hide/show employment history if required */
-function expand(pdfNum) {
+/*function expand(pdfNum) {
   var pdf = document.getElementById("PDFView"+pdfNum);
   if (pdf.style.display === "flex" ){
     pdf.style.display = "none";
@@ -55,7 +56,7 @@ function expand(pdfNum) {
   else {
     pdf.style.display = "flex";
   }
-}
+}*/
 
 /* show more text */
 /* event only for text-container as parent */
@@ -102,3 +103,84 @@ function imageFadeOut() {
   elem.classList.toggle('click-fade-out')
 }
 elem.addEventListener('click', imageFadeOut);
+
+
+/* toggle header background each day */
+/* defining background schemes */
+const backgroundSchemes = [
+  [
+    {id: 'header-container', background: 'bg-header1'},
+    {id: 'nav-bar', background: 'nav-bg-colour1'}
+  ],
+  [
+    {id: 'header-container', background: 'bg-header2'},
+    {id: 'nav-bar', background: 'nav-bg-colour2'}
+  ],
+  [
+    {id: 'header-container', background: 'bg-header3'},
+    {id: 'nav-bar', background: 'nav-bg-colour3'}
+  ]
+];
+
+const removeBackgroundScheme = (elementId) => {
+  const element = document.getElementById(elementId);
+  console.log("Remove Element id = " + elementId.toString() 
+  + " ,element = "+ element );
+  if (element && element instanceof HTMLElement && element.classList) {
+    const classesToRemove = [...element.classList].filter(className => className.includes('bg'));
+    element.classList.remove(...classesToRemove);
+  }
+};
+
+  // Function to change the color scheme of an element or other element
+const addBackgroundScheme = (elementId, backgroundColor) => {
+  const element = document.getElementById(elementId);
+  console.log("Change Element id = " + elementId.toString()
+  + " ,element = "+ element + " ,background colour = "+ backgroundColor);
+  if (element) {
+    element.classList.add(backgroundColor);
+  }
+};
+
+
+// Function to change the color schemes every minute
+const updateBackgroundSchemes = () => {
+  // Get the current minute
+  const currentTime = new Date().getMilliseconds(); //change to getMinutes or getHours
+
+  // Get the current hour
+  //const currentTime = new Date().getHours();
+  console.log("currentTime = " + currentTime);
+
+  // Calculate the index of the background scheme for 1 minute change
+  const backgroundSchemeIndex = currentTime % backgroundSchemes.length;
+  console.log("BackgroundScheme length = " + backgroundSchemes.length);
+  console.log("BackgroundScheme index = " + backgroundSchemeIndex);
+
+  // Get the background scheme array
+  const schemeArr = backgroundSchemes[backgroundSchemeIndex];
+  console.log("scheme = " + schemeArr.toString());
+
+
+  // Iterate through a color scheme array
+  schemeArr.forEach((scheme)=> {
+      console.log("scheme id = "+ scheme.id);
+      console.log("scheme backgroundColor = "+ scheme.background);
+      console.log("scheme content = "+ scheme.content);
+      // Remove color scheme classes from the current element
+      removeBackgroundScheme(scheme.id);
+
+      // Apply color scheme classes to the current element
+      addBackgroundScheme(scheme.id, scheme.background);
+    
+  });
+};
+// Call the updateColorSchemes function initially
+updateBackgroundSchemes();
+
+// Call the updateColorSchemes function every minute
+setInterval(updateBackgroundSchemes, 6 * 1000); //change to 60 * 1000
+
+// Call the updateColorSchemes function every 24 hours
+//setInterval(updateColorSchemes, 24 * 60 * 60 * 1000);
+
