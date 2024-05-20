@@ -166,6 +166,7 @@ li i:hover:not(.active) {
     position: sticky;
     top: 0;
     transition: all 1s;
+    overflow: hidden;
 }
 
 /*used for other pages not main*/
@@ -200,6 +201,7 @@ li i:hover:not(.active) {
     flex-direction: row;
     justify-content: space-evenly;
     font-size: clamp(0.8rem, 0.9dvw, 1.25rem);
+    overflow: hidden;
 }
 
 /* ========================================
@@ -516,6 +518,7 @@ img {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    overflow: hidden;
 }
 
 #home-footer a {
