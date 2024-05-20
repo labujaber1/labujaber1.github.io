@@ -1,0 +1,121 @@
+{
+    "data": "CV type data",
+    "_comment": "The data supports the aboutMe page instead of hardcoding content and read using PHP",
+    "intro": [
+        "I am a dedicated computer science graduate making a career change from retail into software development. Keen to learn and wanting to collaborate on front-end projects leading towards full stack capabilities.",
+        "Recently I have been working on a project using the Django framework. It is a redesign of an existing static business website where a CMS is included to enable the business advocate full control of content creation. Subsequently the content is dynamically rendered if it exists. It is currently un-hosted. ",
+        "I also have experience in developing tools in .NET aimed at students, including myself, to improve efficiency in assignment execution and support network learning goals.",
+        "In another life I've led multiple retail teams, up to 15 members, and strategised with mid and senior leaders to complete retail working goals within tight time and resource constraints. ",
+        "'Ready and raring to go...'"
+    ],
+    "skills": [
+        "Main Languages: C# (.NET Core), Java and Python.",
+        "Web development: HTML, CSS, and JavaScript.",
+        "Main databases: MySQL, SQL Express, and SQLite.",
+        "Other: Git and Agile development (practiced in group projects)."
+    ],
+    "personal-projects": [
+        {
+            "name": "Django website redesign 2023",
+            "description": 
+                "•	Redesigned an existing static business website using Django and Bootstrap 5.",
+                "•	Added features such as separate inventory galleries, news blog, contact forms, FAQ section, testimonials, Google Maps integration, and social media functionality.",
+                "•	Extended a content management system (CMS) for a business advocate to change 99% of textual content for easier site updates. Includes headers, titles, link titles and icons, business data, and editorial content. ",
+                "•	Built database with SQLite3, formspree.com for email services, and honeypot application.",
+                "•	Optimized original content for grammar, spelling, and image quality."
+        },
+        {
+            "name": "Network Configuration Scriptor 2022-23",
+            "description": "Designed and implemented a C# .NET Core 3.1 desktop application to create network configuration scripts as text files. " +
+            "They are used with Telnet & TFTP to update network device configuration files, and backup/restore configuration files on a directly connected" +
+            "router and in GNS3. Split into 3 decoupled parts, with the first being able to be used "+
+                "with Packet Tracer. Used GITHUB within IDE for version control. Personally used "+ 
+                "during the last year of a degree and presented for the final project."
+        },
+        {
+            "name": "Literature Review Resource 2022",
+            "description": "Conceptualised and constructed a C# .NET Core 3.1 desktop application to store and organise module assignments and their respective resources.
+                Includes sections such as notes, references, search, and a link for each resource providing an increased efficiency in assignment construction. 
+                Used SQL Express (setup script included) with a section for connection string setup, based on MVP, uses singleton design, and utilizes GITHUB for version control. 
+                Personally used during the last year of a degree for module assignments and dissertation."
+        }
+    ],
+    "education": [
+        {
+            "edu_name": "Anglia Ruskin University 2020-2023 @CWA Campus",
+            "edu_course": "BSc (Hons) Applied Computer Science",
+            "edu_result": "Awarded 1st Class Honours Degree with all assignments planned, executed, and submitted early with no re-submissions. Modules scored between 70% and 93%. "
+        },
+        {
+            "edu_name": "College of West Anglia 2019-2020",
+            "edu_course": "Applied Computer Science Level 3",
+            "edu_result": "Awarded Distinction. 1 merit and the rest distinctions."
+        }
+    ],
+    "work_history": [
+        {
+            "company": "Tesco PLC",
+            "years": "2004-2019",
+            "positions": [
+                {
+                    "title": "TeamLeader",
+                    "time-length": "8yrs",
+                    "description": [
+                        "Team-Leader (nights) - Supported department managers by directing up to 15-member teams to meet a nightly 70% store filling split requirement.",
+                        "Collaborated with 3 other team leaders to complete department objectives and reaffirm the continued value of the role to the business.",
+                        "Implemented staff training strategies and consistently achieved 100% team compliance with periodical service, health and hygiene, and fire safety company training.",
+                        "Repeatedly analysed and re-sited fast-moving/promotional items to exceed sales beyond its location capacity and reduce warehouse stock holding by 15%.",
+                        "Ensured staff rotas and payroll attendance reports were completed thoroughly and on-time to reduce colleague wage discrepancies by 15%.",
+                        "Instigated personal support to assist the warehouse member by taking in deliveries, delivering stock to and from filling teams, and prepare shop floor in time for day-trading."
+                    ]
+                },
+                {
+                    "title": "General Assistant",
+                    "time-length": "7yrs",
+                    "description": [
+                        "GA (nights) – Replenish, present working area, and organise returns. Additionally coordinated with the stock-control department to drive accurate item system levels for improved customer availability."
+                    ]
+                }
+            ]
+        },
+        {
+            "company": "McColls Retail Group Plc ",
+            "years": "1996 - 2004",
+            "positions": [
+                {
+                    "title": "IBM AS400 Computer Operator",
+                    "time-length": "3yrs",
+                    "description": [
+                        "Monitored AS400 System and Network Servers for messages and errors. ",
+                        "Created and maintained user profiles on both AS400 System and Network server.",
+                        "Backed up and restored data on both systems.",
+                        "Responsible for communications between retail premises and head office and ensured data integrity. ",
+                        "Ensured the completion of scheduled daily/weekly and periodical tasks. ",
+                        "Provided a first line of support service for internal and external users on AS400 system and second line of support for Network users. ",
+                        "Responsible for the maintenance of all AS400 linked hardware."
+                    ]
+                },
+                {
+                    "title": "Systems Support Analyst ",
+                    "time-length": "2yrs",
+                    "description": [
+                        "Responsible for the maintenance of branch PCs and tills.",
+                        "Resolved software errors/issues for branch systems.",
+                        "Provided a first line of contact service for Head Office systems including AS400 users.",
+                        "Ensured the completion of all branch accounting on a weekly basis.",
+                        "Supported branches in all operational issues.",
+                        "Resolved branch telecommunication faults."
+                    ]
+                },
+                {
+                    "title": "Retail Coordinator/ Branch Manager Apr ",
+                    "time-length": "3yrs",
+                    "description": [
+                        "",
+                        ""
+                    ]
+                }
+            ]
+        }
+    ]
+}
