@@ -96,6 +96,7 @@ li {
 
 /*class for font awesome icons*/
 .user {
+    /*flex-shrink and grow 1, flex-basis 0*/
     flex: 1;
 }
 
