@@ -26,6 +26,7 @@
 :root {
     --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     --char-multiplier: 0.39dvw;
+    --char-multiplier-nav: 0.29dvw;
     --focus-colour: 0 0 1px 2px rgb(234, 174, 61);
     --background-light: rgb(237, 241, 247);
     --background-main: rgb(250, 250, 250);
@@ -101,25 +102,25 @@ li {
 a {
     display: inline-block;
     width: fit-content;
-    color: black;
+    color: white;
     padding: 5px;
     text-decoration: none;
     text-align: center;
-    font-size: calc(1em + var(--char-multiplier));
+    font-size: calc(0.75em + var(--char-multiplier));
 }
 
 /*font awesome icons*/
 i {
-    width: 20px;
+    width: 16px;
     color: rgb(234, 174, 61);
-    transform: scale(2);
+    transform: scale(1.5);
     margin: 0.5rem;
 }
 
 /* highlight active links on hover */
 li a:hover:not(.active) {
     transition: all 500ms ease-in-out;
-    transform: scale(1.1);
+    transform: scale(1.05);
     color: white;
 }
 
