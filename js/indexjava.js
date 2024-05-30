@@ -179,7 +179,7 @@ const updateBackgroundSchemes = () => {
 updateBackgroundSchemes();
 
 // Call the updateColorSchemes function every minute
-setInterval(updateBackgroundSchemes, 6 * 1000); //change to 60 * 1000
+setInterval(updateBackgroundSchemes, 20 * 1000); //change to 60 * 1000
 
 // Call the updateColorSchemes function every 24 hours
 //setInterval(updateColorSchemes, 24 * 60 * 60 * 1000);
