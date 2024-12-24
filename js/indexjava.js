@@ -58,6 +58,14 @@ window.addEventListener("scroll", reveal);
   }
 }*/
 
+/* toggle hide a section class by the element id*/
+function showHideSection(section1,section2) {
+  var sect1 = document.getElementById(section1);
+  var sect2 = document.getElementById(section2);
+  sect1.classList.toggle("hide-section");
+  sect2.classList.toggle("hide-section");
+}
+
 /* show more text */
 /* event only for text-container as parent */
 function toggleText(icon) {

@@ -1,0 +1,19 @@
+.nav {
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    transition: all 2s ease;
+    overflow: hidden;
+}
+
+/*used for other pages not main*/
+.nav-base-colour {
+    background-color: rgb(46, 117, 182);
+}
+
+.nav p {
+    color: white;
+}

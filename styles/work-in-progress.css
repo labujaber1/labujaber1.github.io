@@ -1,0 +1,29 @@
+/* in home page for future planned project */
+.work-in-progress {
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    border-radius: 3px;
+    display: inline-block;
+    padding: 1rem;
+    text-align: justify;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.wip-image-container {
+    background-color: #84c4f8;
+    background-image: url("../pics/stickynote.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    max-width: 100px;
+    height: auto;
+    padding: 20px 10px;
+    float: left;
+}
+
+.wip-text {
+    color: gray;
+    font-size: 16px;
+    font-family: 'Edu SA Beginner', cursive;
+}

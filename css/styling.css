@@ -1,24 +1,31 @@
+@import url('../styles/imageFrame-pc.css');
+@import url('../styles/footer.css');
+@import url('../styles/header.css');
+@import url('../styles/nav.css');
+@import url('../styles/work-in-progress');
+@import url('../styles/cv-doc-page.css');
+
 /* Author: L.Abu-Jaber
    Date: 04/2023 
    Description: Portfolio site to show current projects
 
    Contents:
-    1. GLOBAL SETTINGS (23)
-    2. TYPOGRAPHY (50)
-    3. LAYOUT - MAIN COMPONENTS (125)
+    1. GLOBAL SETTINGS (29)
+    2. TYPOGRAPHY (59)
+    3. LAYOUT - MAIN COMPONENTS (145)
     4. LAYOUT - GENERAL REUSABLE COMPONENTS (185)
     4.1 GENERAL CONTAINERS (189)
-    4.2 TEXT CONTAINERS (235)
-    4.3 IMAGE CONTAINERS (310)
-    5. LANDING PAGE COMPONENTS (409)
-    6. PERSONAL PROJECTS (PP) COMPONENTS (499)
-    7. CV COMPONENTS (591)
-    8. UTILITIES (644)
-    9. BUTTONS (664)
-    10. ANIMATIONS (689)
-    11. MEDIA QUERIES (765)
+    4.2 TEXT CONTAINERS (242)
+    4.3 IMAGE CONTAINERS (332)
+    5. PERSONAL PROJECTS (PP) COMPONENTS (354)
+    6. UTILITIES (458)
+    7. BUTTONS (480)
+    8. ANIMATIONS (507)
+    9. MEDIA QUERIES (688)
     # Note - line numbers are approx.
 */
+
+
 /* ==================
 * 1. GLOBAL SETTINGS
 ===================== */
@@ -159,25 +166,7 @@ li i:hover:not(.active) {
     text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
 }
 
-.nav {
-    width: 100%;
-    height: fit-content;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    transition: all 2s ease;
-    overflow: hidden;
-}
 
-/*used for other pages not main*/
-.nav-base-colour {
-    background-color: rgb(46, 117, 182);
-}
-
-.nav p {
-    color: white;
-}
 
 .stickyColourChange1 {
     background-color: rgb(37, 123, 147);
@@ -192,18 +181,6 @@ li i:hover:not(.active) {
     background-color: rgb(14, 168, 32);
 }
 
-/* Changed from original design - now only set at the bottom of cv */
-.footer {
-    background-color: rgb(99, 146, 248);
-    width: 100%;
-    padding-top: 1rem;
-    min-height: 15dvh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size: clamp(0.8rem, 0.9dvw, 1.25rem);
-    overflow: hidden;
-}
 
 /* ========================================
 * 4. LAYOUT - GENERAL REUSABLE COMPONENTS
@@ -219,6 +196,11 @@ li i:hover:not(.active) {
     flex-wrap: wrap;
     align-items: center;
     padding: 2rem;
+}
+
+.wrapper-grid-2-col {
+    background-color: red;
+    display: grid;
 }
 
 .background-light {
@@ -363,195 +345,15 @@ img {
 }
 
 /*image cards */
-/* contains laptop and text */
-.imageCase {
-    max-width: 360px;
-    height: 100%;
-    margin: auto;
-    padding: 1rem;
-}
-
-/* contains laptop components */
-.imageFrameContainer {
-    width: 100%;
-    height: 100%;
-    padding: 3px;
-}
-
-/* start building laptop components */
-.imageFrame {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    padding: 2px;
-    transition: all 400ms ease-in-out;
-    background-color: rgb(116, 18, 18);
-    border-radius: 5px;
-    border: 10px black solid;
-    border-top-width: 15px;
-    border-bottom-width: 15px;
-}
-
-/* Additional design added to image cards to look like a laptop */
-.imageFrame:before {
-    content: "";
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    top: -7px;
-    background: white;
-    display: block;
-    transform: translate(-50%, -50%);
-    box-shadow: inset 0 1px 2px 0 gray;
-}
-
-.imageFrame-bottom {
-    max-width: 100%;
-    height: 17px;
-    background-color: rgb(145, 145, 145);
-    border-radius: 0 0 30px 30px;
-    margin: 1px 0 0 0;
-    border-bottom: 2px solid;
-}
-
-.feet {
-    max-width: 100%;
-    height: 1.5px;
-    border-radius: 10px;
-    margin: 0 15px;
-    background: linear-gradient(to right,
-            rgb(107, 106, 106) 10%,
-            transparent 10%,
-            transparent 90%,
-            rgb(107, 106, 106) 90%,
-            rgb(107, 106, 106) 100%);
-}
-
-.imageFrame-bottom.reflect {
-    transform: rotate(180deg);
-    mask-image: linear-gradient(transparent 50%, white 95%);
-    opacity: 0.5;
-    margin: 0;
-}
-
-.imageFrame:hover img {
-    filter: brightness(110%);
-    box-shadow: none;
-}
-
-.imageFrame img {
-    width: fit-content;
-
-    border-radius: 0 0 0 0;
-}
-
 /* personal projects */
 .imageCase.pp {
     max-width: 600px;
     margin: 1rem auto;
 }
 
-/* ==========================
-* 5. LANDING PAGE COMPONENTS
-===========================*/
-/* home page only */
-.header {
-    width: 100%;
-    height: 55dvh;
-    display: flex;
-    flex-wrap: nowrap;
-    transition: all 2s ease;
-}
-
-.header img {
-    content: "";
-    min-width: 80px;
-    transform: scale(0.7);
-    transition: all 1s ease-in-out;
-    border-radius: 50%;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-#img-pos {
-    flex-grow: 1;
-    padding: 10px 0;
-    overflow: hidden;
-}
-
-.header img:hover {
-    transform: scale(0.8);
-    box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.6);
-}
-
-/* used in home header for name */
-#header-textBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-grow: 1;
-    margin: auto 0;
-    padding: 10px 10px;
-}
-
-#header-textBox p {
-    font-weight: bolder;
-    font-size: calc(2.5rem + 0.65dvw);
-}
-
-/* diff color */
-#home-footer {
-    background-color: rgb(38, 17, 17);
-    width: 100%;
-    min-height: 15dvh;
-    font-size: clamp(0.8rem, 0.9dvw, 1.25rem);
-    margin: 10px 0 30px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-#home-footer a {
-    color: white;
-}
-
-/* in home page for future planned project */
-.work-in-progress {
-    width: 100%;
-    box-shadow: var(--box-shadow);
-    border-radius: 3px;
-    display: inline-block;
-    padding: 1rem;
-    text-align: justify;
-    margin-bottom: 30px;
-    background-color: white;
-}
-
-.wip-image-container {
-    background-color: #84c4f8;
-    background-image: url("../pics/stickynote.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    max-width: 100px;
-    height: auto;
-    padding: 20px 10px;
-    float: left;
-}
-
-.wip-text {
-    color: gray;
-    font-size: 16px;
-    font-family: 'Edu SA Beginner', cursive;
-}
-
 
 /* ====================================
-* 6. PERSONAL PROJECTS (PP) COMPONENTS 
+* 5. PERSONAL PROJECTS (PP) COMPONENTS 
 * - mainly for gallery displays
 =====================================*/
 .subtitle {
@@ -652,65 +454,9 @@ Added for mobile viewing as light-box is not effective */
 }
 
 
-/* ==================
-* 7. CV COMPONENTS
-====================*/
-/* document display */
-.docContainer {
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-}
-
-.docFrame {
-    background-color: rgb(233, 233, 247);
-    max-width: 800px;
-    margin: 20px 0;
-    box-shadow: var(--box-shadow);
-    border: yellow;
-    border-style: ridge;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    transition: all 1.5s ease-in-out;
-}
-
-.docFrame a {
-    color: rgb(22, 11, 235);
-}
-
-.docFrame a:hover {
-    color: rgb(198, 147, 52);
-}
-
-.docContainer .text-container {
-    max-width: 800px;
-    margin: 5px auto;
-    text-align: center;
-}
-
-#PDFView1,
-#PDFView2 {
-    width: 100%;
-    height: 600px;
-    padding: 2px;
-    display: none;
-    align-items: center;
-}
-
-/* used in cv links and button click */
-.itemRowSpace {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-}
 
 /* ==============
-* 8. UTILITIES 
+* 6. UTILITIES 
 ===============*/
 /* show and hide additional descriptive text in text-containers*/
 .show-text {
@@ -733,7 +479,7 @@ Added for mobile viewing as light-box is not effective */
 }
 
 /* ===============
-* 9. BUTTONS
+* 7. BUTTONS
 -============== */
 /* Return to top of section anchor */
 .scrollToTopButton {
@@ -759,7 +505,7 @@ Added for mobile viewing as light-box is not effective */
 }
 
 /* ================
-* 10. ANIMATIONS
+* 8. ANIMATIONS
 ================= */
 /* css animation element fade in courtesy of 
 h ttps://alvarotrigo.com/blog/css-animations-scroll/*/
@@ -934,9 +680,13 @@ h ttps://alvarotrigo.com/blog/css-animations-scroll/*/
     background-size: cover;
 }
 
+/* mini-projects section */
+.hide-section {
+    display: none;
+}
 
 /* ##################
-* 11. MEDIA QUERIES
+* 9. MEDIA QUERIES
 ################## */
 @media (width >=1000px) {
     .wrapper {
@@ -973,9 +723,9 @@ h ttps://alvarotrigo.com/blog/css-animations-scroll/*/
         flex-direction: column;
     }
 
-    .header img:hover {
+    /*.header img:hover {
         transform: scale(0.7);
-    }
+    }*/
 
     .textBox--Left {
         padding: 0 0;

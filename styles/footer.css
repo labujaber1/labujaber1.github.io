@@ -1,0 +1,30 @@
+/* Changed from original design - now only set at the bottom of cv */
+.footer {
+    background-color: rgb(99, 146, 248);
+    width: 100%;
+    padding-top: 1rem;
+    min-height: 15dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: clamp(0.8rem, 0.9dvw, 1.25rem);
+    overflow: hidden;
+}
+
+/* diff color */
+#home-footer {
+    background-color: rgb(38, 17, 17);
+    width: 100%;
+    min-height: 15dvh;
+    font-size: clamp(0.8rem, 0.9dvw, 1.25rem);
+    margin: 10px 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#home-footer a {
+    color: white;
+}

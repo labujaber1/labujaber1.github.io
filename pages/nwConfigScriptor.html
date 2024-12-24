@@ -1,174 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRJ9HSKE7Z"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-SRJ9HSKE7Z');
+        gtag('config', 'G-SRJ9HSKE7Z');
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Network Configuration Scriptor Project</title>
-    <meta name="author" content="Lawrence Abu-Jaber"/>
-    <meta
-    name="description"
-    content="Display Network Configuration Scriptor project."/>
+    <meta name="author" content="Lawrence Abu-Jaber" />
+    <meta name="description" content="Display Network Configuration Scriptor project." />
     <meta name="google-site-verification" content="vzRB3MlhZXU95zeezwmdOKIeAbCPaoWT78CMK65canQ" />
-    
+
     <!-- style css sheet-->
     <link rel="stylesheet" href="../css/styling.css">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Links for bootstrap css (js at bottom of page)-->
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
-   
+
 </head>
+
 <body>
 
-   
+
     <div class="nav nav-base-colour">
-        <ul>    
-            <li>    
+        <ul>
+            <li>
                 <a href="../pages/djangoUSAVI.html">Website</a>
             </li>
-            <li>    
+            <li>
                 <a href="../pages/litRevResource.html">LitRevSource</a>
             </li>
-            <li>  
+            <li>
                 <a href="../pages/aboutMe.html">About me</a>
             </li>
         </ul>
-        <ul>   
+        <ul>
             <li class="user"><a href="../index.html"><i class="fa fa-home"></i></a></li>
         </ul>
     </div>
 
-<!-- ####################### Personal project 2 start ################################ -->
-<br>  
-<br>
-<div class="pageTitle">
-    <p>Network Configuration Scriptor</p>
-</div>
-<div class="wrapper">
-    <div class="col1">
-        <div class="text-container">
-            <p> The tool has been written in C# and uses the .NET Core 3.1 windows form framework. Each form is fully decoupled 
-                allowing for each method to be extracted and used separately elsewhere by any learner. The telnet 
-                connection is in a separate class and called in the telnet and Tftp forms. The front end design was chosen
-                as effective means of displaying separate forms in a single display thus reducing screen space. </p>
-            <p> The source code can be accessed from<a href="https://github.com/labujaber1/NWConfigScriptor">
-                <em>github</em></a>or download the application<a href="../NWConfigScriptor/PublishConfig.zip"><em>zip</em></a>file.</p>
-            <p> This tool has been developed from a need to reduce the repetitive typing of learned network commands 
-                when a learner is configuring routers and switches in a network topology. 
-                <span class="toggle-icon" onclick="toggleText(this)">
-                    <i class="fa fa-arrow-down"></i>
-                </span> 
-           
-                <p class="show-text hide-text">It can be used on directly 
-                connected devices, virtual devices in GNS3, and in a limited capacity for Packet Tracer. Similar to 
-                the first project, a menu is used as a container for a user to open an instance of each required form 
-                using a singleton design pattern.  
-            </p>
-            <div class="imageCase pp" ><img src="../pics/NWMainMenu.jpg" alt="Main menu image" ></div>
-            
-        </div>
-        
-        <div class="text-container">
-            <p> A script containing a set of network configuration commands can be created from template text files stored 
-                in a designated application folder. The template files are accessed and the contents displayed in the left of the 
-                display for the user to select and begin constructing a script file displayed on the right. 
-                <span class="toggle-icon" onclick="toggleText(this)">
-                    <i class="fa fa-arrow-down"></i>
-                </span> 
-           
-                <p class="show-text hide-text">Each template file can 
-                include notes for the user's reference by using a ? to precede them. The command script is created in an 
-                editable display for the user to add additional data required after a set command such as an IP address or 
-                password. Show commands can also be included as reference and displayed in a separate read-only text box. 
-                The user has full control and access rights to the template files for amendment and creation. <br> 
-                Once a script is created in the editor it can then be saved to a text file or copied and pasted directly to 
-                the command line of a network device. An application folder is included to store these files but again the user has full 
-                access rights to store them elsewhere. Right clicking in the editor will display a menu with additional 
-                options such as opening a help file, append the script to an existing file, copy/paste, and file saving. 
-                The terminal software 'Putty' is included for the user to copy the commands to a directly connected device. 
-                </p>
-            </p>
-            <div class="imageCase pp" ><img src="../pics/NWCreateScript.jpg" alt="Create script image" ></div>
-        </div>
-    
-        <div class="text-container">
-            <p> A script can also be delivered to a device using a telnet connection. 
-                <span class="toggle-icon" onclick="toggleText(this)">
-                    <i class="fa fa-arrow-down"></i>
-                </span> 
-                <p class="show-text hide-text">Whilst this does require the setup of a device with a username, password,
-                ip address, and telnet access enabled, it acts as another method of file delivery. 
-                This is intended to extend a learners ability and exposure to configuration procedures outside 
-                of a virtual environment. The read-only display on the right shows the retrieval of the device's command line
-                for the user to view its activity and see if each command sent was correctly processed. The process simply reads
-                the text file to the command line and closes the connection when done.  
-                </p>
-            </p>
-            <div class="imageCase pp" ><img src="../pics/NWTelnetScreen2.jpg" alt="Telnet image" ></div>
-        </div>
-        <div class="text-container">
-            <p> It has been extended further to include a method of running configuration file backup and restore.
-                <span class="toggle-icon" onclick="toggleText(this)">
-                    <i class="fa fa-arrow-down"></i>
-                </span> 
-                <p class="show-text hide-text">
-                Using a telnet connection and a server (TFTPD64 included) 'copy running-config' commands are sent to a device. 
-                Retrieved configuration files can be selected and displayed for viewing or editing for advanced learners. 
-                The running-config files are chosen, rather than a startup-config file, to test first and minimise the effect of 
-                configuration errors when restoring to a device.
-                </p>
-            </p>
-            <div class="imageCase pp" ><img src="../pics/NWTFTPScreen.jpg" alt="TFTP image" ></div>
-            
-        </div>
-        <div class="text-container">
-            <p>The tool was eventually submitted as a final project and used to assist in creating WAN and LAN 
-                topologies in an advanced networking assignment where both scored A grades.
-            </p>
-            <span>
-                <i class="fa fa-smile-o "> </i>
-                <i class="fa fa-hand-o-right "> </i>
-                <i class="fa fa-graduation-cap "> </i> 
-                
-                
-            </span>
-            </div>
+    <!-- ####################### Personal project 2 start ################################ -->
+    <br>
+    <br>
+    <div class="pageTitle">
+        <p>Network Configuration Scriptor</p>
     </div>
-</div>
+    <div class="wrapper">
+        <div class="col1">
+            <div class="text-container">
+                <p> The tool has been written in C# and uses the .NET Core 3.1 windows form framework. Each form is
+                    fully decoupled
+                    allowing for each method to be extracted and used separately elsewhere by any learner. The telnet
+                    connection is in a separate class and called in the telnet and Tftp forms. The front end design was
+                    chosen
+                    as effective means of displaying separate forms in a single display thus reducing screen space. </p>
+                <p> The source code can be accessed from<a href="https://github.com/labujaber1/NWConfigScriptor">
+                        <em>github</em></a>or download the application<a
+                        href="../resources/NWConfigScriptor/PublishConfig.zip"><em>zip</em></a>file.</p>
+                <p> This tool has been developed from a need to reduce the repetitive typing of learned network commands
+                    when a learner is configuring routers and switches in a network topology.
+                    <span class="toggle-icon" onclick="toggleText(this)">
+                        <i class="fa fa-arrow-down"></i>
+                    </span>
 
-<!-- ####################### Personal project 2 end ################################ -->
-<div class="footer">
-    <ul>
-        <li class="user"><a href="https://uk.linkedin.com/in/lawrence-abu-jaber" target="_blank"><i class="fa fa-linkedin "></i> LinkedIn</a></li>
-        <li class="user"><a href="mailto:lawrenceabujaber@gmail.com" target="_blank"><i class="fa fa-envelope"></i> Email: lawrenceabujaber @gmail.com</a></li>
-        <li class="user"><a href="https://en.wikipedia.org/wiki/Wisbech" target="_blank"><i class="fa fa-map-marker"></i> Wisbech, Cambridgeshire</a></li>
-        <li class="user" style="font-family: 'Caveat';"><a href="https://labujaber1.github.io/WebDesignExperiments" target="_blank">More..</a></li>
-    </ul>
-</div>
+                <p class="show-text hide-text">It can be used on directly
+                    connected devices, virtual devices in GNS3, and in a limited capacity for Packet Tracer. Similar to
+                    the first project, a menu is used as a container for a user to open an instance of each required
+                    form
+                    using a singleton design pattern.
+                </p>
+                <div class="imageCase pp"><img src="../pics/NWMainMenu.jpg" alt="Main menu image"></div>
 
-<script src="../js/indexjava.js"></script>
-<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>-->  
+            </div>
+
+            <div class="text-container">
+                <p> A script containing a set of network configuration commands can be created from template text files
+                    stored
+                    in a designated application folder. The template files are accessed and the contents displayed in
+                    the left of the
+                    display for the user to select and begin constructing a script file displayed on the right.
+                    <span class="toggle-icon" onclick="toggleText(this)">
+                        <i class="fa fa-arrow-down"></i>
+                    </span>
+
+                <p class="show-text hide-text">Each template file can
+                    include notes for the user's reference by using a ? to precede them. The command script is created
+                    in an
+                    editable display for the user to add additional data required after a set command such as an IP
+                    address or
+                    password. Show commands can also be included as reference and displayed in a separate read-only text
+                    box.
+                    The user has full control and access rights to the template files for amendment and creation. <br>
+                    Once a script is created in the editor it can then be saved to a text file or copied and pasted
+                    directly to
+                    the command line of a network device. An application folder is included to store these files but
+                    again the user has full
+                    access rights to store them elsewhere. Right clicking in the editor will display a menu with
+                    additional
+                    options such as opening a help file, append the script to an existing file, copy/paste, and file
+                    saving.
+                    The terminal software 'Putty' is included for the user to copy the commands to a directly connected
+                    device.
+                </p>
+                </p>
+                <div class="imageCase pp"><img src="../pics/NWCreateScript.jpg" alt="Create script image"></div>
+            </div>
+
+            <div class="text-container">
+                <p> A script can also be delivered to a device using a telnet connection.
+                    <span class="toggle-icon" onclick="toggleText(this)">
+                        <i class="fa fa-arrow-down"></i>
+                    </span>
+                <p class="show-text hide-text">Whilst this does require the setup of a device with a username, password,
+                    ip address, and telnet access enabled, it acts as another method of file delivery.
+                    This is intended to extend a learners ability and exposure to configuration procedures outside
+                    of a virtual environment. The read-only display on the right shows the retrieval of the device's
+                    command line
+                    for the user to view its activity and see if each command sent was correctly processed. The process
+                    simply reads
+                    the text file to the command line and closes the connection when done.
+                </p>
+                </p>
+                <div class="imageCase pp"><img src="../pics/NWTelnetScreen2.jpg" alt="Telnet image"></div>
+            </div>
+            <div class="text-container">
+                <p> It has been extended further to include a method of running configuration file backup and restore.
+                    <span class="toggle-icon" onclick="toggleText(this)">
+                        <i class="fa fa-arrow-down"></i>
+                    </span>
+                <p class="show-text hide-text">
+                    Using a telnet connection and a server (TFTPD64 included) 'copy running-config' commands are sent to
+                    a device.
+                    Retrieved configuration files can be selected and displayed for viewing or editing for advanced
+                    learners.
+                    The running-config files are chosen, rather than a startup-config file, to test first and minimise
+                    the effect of
+                    configuration errors when restoring to a device.
+                </p>
+                </p>
+                <div class="imageCase pp"><img src="../pics/NWTFTPScreen.jpg" alt="TFTP image"></div>
+
+            </div>
+            <div class="text-container">
+                <p>The tool was eventually submitted as a final project and used to assist in creating WAN and LAN
+                    topologies in an advanced networking assignment where both scored A grades.
+                </p>
+                <span>
+                    <i class="fa fa-smile-o "> </i>
+                    <i class="fa fa-hand-o-right "> </i>
+                    <i class="fa fa-graduation-cap "> </i>
+
+
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ####################### Personal project 2 end ################################ -->
+    <div class="footer">
+        <ul>
+            <li class="user"><a href="https://uk.linkedin.com/in/lawrence-abu-jaber" target="_blank"><i
+                        class="fa fa-linkedin "></i> LinkedIn</a></li>
+            <li class="user"><a href="mailto:lawrenceabujaber@gmail.com" target="_blank"><i class="fa fa-envelope"></i>
+                    Email: lawrenceabujaber @gmail.com</a></li>
+            <li class="user"><a href="https://en.wikipedia.org/wiki/Wisbech" target="_blank"><i
+                        class="fa fa-map-marker"></i> Wisbech, Cambridgeshire</a></li>
+            <li class="user" style="font-family: 'Caveat';"><a href="https://labujaber1.github.io/WebDesignExperiments"
+                    target="_blank">More..</a></li>
+        </ul>
+    </div>
+
+    <script src="../js/indexjava.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>-->
 
 </body>
-</html>   
+
+</html>
