@@ -58,12 +58,14 @@ window.addEventListener("scroll", reveal);
   }
 }*/
 
-/* toggle hide a section class by the element id*/
-function showHideSection(section1,section2) {
+/* toggle hide two section classes by the element id and move to an anchor*/
+function showHideSection(section1,section2, anchorTag) {
   var sect1 = document.getElementById(section1);
   var sect2 = document.getElementById(section2);
   sect1.classList.toggle("hide-section");
   sect2.classList.toggle("hide-section");
+  var element = document.getElementById(anchorTag);
+  element.scrollIntoView({ behavior: "smooth" });
 }
 
 /* show more text */
