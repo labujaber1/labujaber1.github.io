@@ -59,12 +59,12 @@ window.addEventListener("scroll", reveal);
 }*/
 
 /* toggle hide two section classes by the element id and move to an anchor*/
-function showHideSection(section1,section2, anchorTag) {
+function showHideSection(section1,section2, scrollToId) {
   var sect1 = document.getElementById(section1);
   var sect2 = document.getElementById(section2);
   sect1.classList.toggle("hide-section");
   sect2.classList.toggle("hide-section");
-  var element = document.getElementById(anchorTag);
+  var element = document.getElementById(scrollToId);
   element.scrollIntoView({ behavior: "smooth" });
 }
 
